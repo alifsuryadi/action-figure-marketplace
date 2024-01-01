@@ -1,0 +1,21 @@
+// _ tujuannya agar ngk di compile secara langsung
+.component-categories {
+  border-radius: 8px;
+  background: #f4f4f4;
+  padding: 30px 30px 10px 30px;
+  margin-bottom: 20px;
+  transition: all 0.2s ease-in-out;
+
+  &:hover {
+    transform: scale(1.05);
+    text-decoration: none;
+  }
+
+  .categories-text {
+    margin-top: 12px;
+    color: #0c0d36;
+    text-align: center;
+    font-size: 18px;
+    font-weight: 400;
+  }
+}
