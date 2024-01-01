@@ -18,16 +18,19 @@ return new class extends Migration
             $table->timestamp('email_verified_at')->nullable();
             $table->string('password');
 
-            $table->longText('address_one');
-            $table->longText('address_two');
-            $table->integer('provinces_id');
-            $table->integer('regencies_id');
-            $table->integer('zip_code');
-            $table->string('country');
-            $table->string('phone_number');
-            $table->string('store_name');
-            $table->integer('categories_id');
-            $table->integer('store_status');
+            
+            $table->string('roles')->default('USER');
+            $table->longText('address_one')->nullable()->change();
+            $table->longText('address_two')->nullable()->change();
+            $table->integer('provinces_id')->nullable()->change();
+            $table->integer('regencies_id')->nullable()->change();
+            $table->integer('zip_code')->nullable()->change();
+            $table->string('country')->nullable()->change();
+            $table->string('phone_number')->nullable()->change();
+            $table->string('store_name')->nullable()->change();
+            $table->integer('categories_id')->nullable()->change();
+            $table->integer('store_status')->nullable()->change();
+            
 
             // Agar user ngk kedelete permanent
             $table->softDeletes();

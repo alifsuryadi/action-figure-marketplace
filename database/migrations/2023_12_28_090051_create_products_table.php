@@ -18,6 +18,7 @@ return new class extends Migration
             $table->integer('categories_id');
             $table->integer('price');
             $table->longText('description');
+            $table->string('slug');
 
             $table->softDeletes();
             $table->timestamps();

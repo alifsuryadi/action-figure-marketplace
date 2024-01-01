@@ -38,21 +38,21 @@
                                 data-bs-interval="1000"
                             >
                                 <img
-                                    src="/images/banner.jpg"
+                                    src="/images/promo/banner.jpg"
                                     alt="Carousel Image"
                                     class="d-block w-100"
                                 />
                             </div>
                             <div class="carousel-item" data-bs-interval="2000">
-                                <img
-                                    src="/images/banner.jpg"
+                                    <img
+                                    src="/images/promo/banner.jpg"
                                     alt="Carousel Image"
                                     class="d-block w-100"
-                                />
+                                    />
                             </div>
                             <div class="carousel-item" data-bs-interval="3000">
                                 <img
-                                    src="/images/banner.jpg"
+                                    src="/images/promo/banner.jpg"
                                     alt="Carousel Image"
                                     class="d-block w-100"
                                 />
