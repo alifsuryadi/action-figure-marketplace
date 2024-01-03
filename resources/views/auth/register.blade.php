@@ -19,10 +19,10 @@
                         <form method="POST" action="{{ route('register') }}" class="mt-3">
                             @csrf
                             <div class="form-group">
-                                <label for="name">Full Name</label>
+                                <label for="name">Nama Lengkap</label>
                                 <input  id="name" 
                                         type="text" 
-                                        placeholder="your name"
+                                        placeholder="nama kamu"
                                         class="form-control @error('name') is-invalid @enderror" 
                                         name="name" value="{{ old('name') }}" 
                                         required autocomplete="name" 
@@ -36,10 +36,10 @@
                                 @enderror
                             </div>
                             <div class="form-group">
-                                <label for="email">Email Address</label>
+                                <label for="email">Alamat Email</label>
                                 <input  id="email" 
                                         type="email"
-                                        placeholder="example@gmail.com" 
+                                        placeholder="contoh@gmail.com" 
                                         v-model="email"
                                         @change="checkForEmailAvailability()"
                                         class="form-control @error('email') is-invalid @enderror" 
@@ -55,7 +55,7 @@
                                 @enderror
                             </div>
                             <div class="form-group">
-                                <label for="password">Password</label>
+                                <label for="password">Kata Sandi</label>
                                 <input  id="password" type="password" 
                                         class="form-control @error('password') is-invalid @enderror" 
                                         name="password" required autocomplete="new-password">
@@ -67,7 +67,7 @@
                                 @enderror
                             </div>
                             <div class="form-group">
-                                <label for="password-confirmation">Confirm Password</label>
+                                <label for="password-confirmation">Konfirmasi Kata Sandi</label>
                                 <input  id="password-confirmation" type="password" 
                                         class="form-control @error('password_confirmation') is-invalid @enderror" 
                                         name="password_confirmation" required autocomplete="new-password">
@@ -119,8 +119,7 @@
                                         class="form-control @error('store_name') is-invalid @enderror" 
                                         name="store_name"
                                         required autocomplete
-                                        v-model="store_name"
-                                        autofocus>
+                                        v-model="store_name">
 
                                 @error('store_name')
                                     <span class="invalid-feedback" role="alert">
@@ -129,7 +128,7 @@
                                 @enderror
                             </div>
                             <div class="form-group" v-if="is_store_open">
-                                <label>Kategori</label>
+                                <label>Kategori Toko</label>
                                 <select name="categories_id"class="form-control">
                                 <option value="" disabled selected>Select Category</option>
                                 @foreach ($categories as $category)
@@ -142,10 +141,10 @@
                                 class="btn btn-success btn-block px-4 mt-4"
                                 :disabled="this.email_unavailable"
                             >
-                                Sign Up Now
+                                Daftar
                             </button>
                             <a href="{{ route('login') }}" class="btn btn-signup btn-block px-4 mt-2"
-                                >Back to Sign In</a
+                                >Kembali Login</a
                             >
                         </form>
                     </div>
@@ -155,6 +154,28 @@
     </div>
 
 @endsection
+
+@push('prepend-script')
+<div class="animation-login">
+    <div class="wrapper">
+        <div><span class="dot"></span></div>
+        <div><span class="dot"></span></div>
+        <div><span class="dot"></span></div>
+        <div><span class="dot"></span></div>
+        <div><span class="dot"></span></div>
+        <div><span class="dot"></span></div>
+        <div><span class="dot"></span></div>
+        <div><span class="dot"></span></div>
+        <div><span class="dot"></span></div>
+        <div><span class="dot"></span></div>
+        <div><span class="dot"></span></div>
+        <div><span class="dot"></span></div>
+        <div><span class="dot"></span></div>
+        <div><span class="dot"></span></div>
+        <div><span class="dot"></span></div>
+      </div>
+</div>
+@endpush
 
 @push('addon-script')
     <script src="/vendor/vue/vue.js"></script>

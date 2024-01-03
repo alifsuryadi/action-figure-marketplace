@@ -25,7 +25,7 @@
                         @csrf
                         
                         <div class="form-group">
-                            <label for="email">Email Address</label>
+                            <label for="email">Alamat Email</label>
                             <input id="email" type="email" class="form-control w-75 @error('email') is-invalid @enderror" name="email" value="{{ old('email') }}" required autocomplete="email" autofocus>
 
                                     @error('email')
@@ -35,7 +35,7 @@
                                     @enderror
                         </div>
                         <div class="form-group">
-                            <label for="password">Password</label>
+                            <label for="password">Kata Sandi</label>
                             <input id="password" type="password" class="form-control w-75 @error('password') is-invalid @enderror" name="password" required autocomplete="current-password">
 
                                     @error('password')
@@ -48,13 +48,13 @@
                             type="submit"
                             class="btn btn-success btn-block px-4 w-75 mt-4"
                         >
-                            Sign In to My Account
+                            Masuk
                         </button>
                         <a
                             href="{{ route('register') }}"
                             class="btn btn-signup btn-block px-4 w-75 mt-2"
                         >
-                            Sign Up
+                            Mendaftar
                         </a>
                     </form>
                 </div>
@@ -133,3 +133,26 @@
         </div>
     </div>
 @endsection
+
+
+@push('prepend-script')
+<div class="animation-login">
+    <div class="wrapper">
+        <div><span class="dot"></span></div>
+        <div><span class="dot"></span></div>
+        <div><span class="dot"></span></div>
+        <div><span class="dot"></span></div>
+        <div><span class="dot"></span></div>
+        <div><span class="dot"></span></div>
+        <div><span class="dot"></span></div>
+        <div><span class="dot"></span></div>
+        <div><span class="dot"></span></div>
+        <div><span class="dot"></span></div>
+        <div><span class="dot"></span></div>
+        <div><span class="dot"></span></div>
+        <div><span class="dot"></span></div>
+        <div><span class="dot"></span></div>
+        <div><span class="dot"></span></div>
+      </div>
+</div>
+@endpush

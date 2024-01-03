@@ -16,21 +16,8 @@ return new class extends Migration
             $table->string('name');
             $table->string('email')->unique();
             $table->timestamp('email_verified_at')->nullable();
-            $table->string('password');
-
-            
+            $table->string('password');          
             $table->string('roles')->default('USER');
-            $table->longText('address_one')->nullable()->change();
-            $table->longText('address_two')->nullable()->change();
-            $table->integer('provinces_id')->nullable()->change();
-            $table->integer('regencies_id')->nullable()->change();
-            $table->integer('zip_code')->nullable()->change();
-            $table->string('country')->nullable()->change();
-            $table->string('phone_number')->nullable()->change();
-            $table->string('store_name')->nullable()->change();
-            $table->integer('categories_id')->nullable()->change();
-            $table->integer('store_status')->nullable()->change();
-            
 
             // Agar user ngk kedelete permanent
             $table->softDeletes();
@@ -45,5 +32,6 @@ return new class extends Migration
     public function down(): void
     {
         Schema::dropIfExists('users');
+
     }
 };

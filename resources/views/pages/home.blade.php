@@ -33,26 +33,23 @@
                             ></li>
                         </ol>
                         <div class="carousel-inner">
-                            <div
-                                class="carousel-item active"
-                                data-bs-interval="1000"
-                            >
+                            <div class="carousel-item active" data-bs-interval="100">
                                 <img
-                                    src="/images/promo/banner.jpg"
+                                    src="/images/promo/banner 1.jpg"
                                     alt="Carousel Image"
                                     class="d-block w-100"
                                 />
                             </div>
-                            <div class="carousel-item" data-bs-interval="2000">
+                            <div class="carousel-item" data-bs-interval="200">
                                     <img
-                                    src="/images/promo/banner.jpg"
+                                    src="/images/promo/banner 2.jpg"
                                     alt="Carousel Image"
                                     class="d-block w-100"
                                     />
                             </div>
-                            <div class="carousel-item" data-bs-interval="3000">
+                            <div class="carousel-item" data-bs-interval="300">
                                 <img
-                                    src="/images/promo/banner.jpg"
+                                    src="/images/promo/banner 3.jpg"
                                     alt="Carousel Image"
                                     class="d-block w-100"
                                 />
@@ -93,7 +90,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-12" data-aos="fade-up">
-                    <h5>Trend Categories</h5>
+                    <h5>Kategori Populer</h5>
                 </div>
             </div>
             <div class="row">
@@ -122,7 +119,7 @@
                     </div>
                 @empty
                     <div class="col-12 text-center py-5" data-aos="fade-up" data-aos-delay="100">
-                        No Categories Found
+                        Tidak ada kategori yang ditemukan
                     </div>
                 @endforelse
 
@@ -135,7 +132,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-12" data-aos="fade-up">
-                    <h5>New Products</h5>
+                    <h5>Produk Baru</h5>
                 </div>
             </div>
             <div class="row">
@@ -151,7 +148,7 @@
                         data-aos-delay="{{ $incrementProduct += 100 }}"
                         >
                         <a href="{{ route('detail', $product->slug) }}" class="component-products d-block">
-                            <div class="products-thumbnail">
+                            <div class="products-thumbnail" style="box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.2);">
                                 <div
                                     class="products-image"
                                     style="
@@ -174,12 +171,17 @@
                     </div>
                 @empty
                     <div class="col-12 text-center py-5" data-aos="fade-up" data-aos-delay="100">
-                        No Products Found
+                        Tidak ada produk yang ditemukan
                     </div>
                 @endforelse
 
             </div>
         </div>
+    </section>
+    
+
+    <section class="decoration" data-aos="fade-up-left">
+        <img src="/images/decoration/One Piece.png" alt="">
     </section>
 </div>
 @endsection

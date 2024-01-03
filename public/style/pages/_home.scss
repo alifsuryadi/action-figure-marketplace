@@ -1,16 +1,39 @@
 // _ tujuannya agar ngk di compile secara langsung
 
 .page-home {
-  h5 {
-    font-weight: 300;
-    margin-bottom: 15px;
-  }
+    h5 {
+        font-weight: 300;
+        margin-bottom: 15px;
+    }
 
-  .store-trend-categories {
-    margin-top: 30px;
-  }
+    .store-trend-categories {
+        margin-top: 30px;
+    }
 
-  .store-new-products {
-    margin-top: 20px;
-  }
+    .store-new-products {
+        margin-top: 20px;
+    }
+
+    .decoration {
+        position: absolute;
+        right: 20px;
+        top: 700px;
+
+        @include media-breakpoint-down(sm) {
+            right: 20px;
+            top: 800px;
+        }
+
+        img {
+            width: 200px;
+
+            @include media-breakpoint-down(md) {
+                width: 100px;
+            }
+
+            @include media-breakpoint-down(sm) {
+                width: 50px;
+            }
+        }
+    }
 }

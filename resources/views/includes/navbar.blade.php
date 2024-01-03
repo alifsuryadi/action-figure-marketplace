@@ -2,7 +2,7 @@
     class="navbar navbar-expand-lg navbar-light navbar-store fixed-top navbar-fixed-top"
     data-aos="fade-down"
     >
-    <div class="container">
+    <div class="container navbar-color" >
         <a href="{{ route('home') }}" class="navbar-brand">
             <img src="/images/logo.svg" alt="Logo" />
         </a>
@@ -19,25 +19,25 @@
         <div class="collapse navbar-collapse" id="navbarResponsive">
             <ul class="navbar-nav ml-auto">
                 <li class="nav-item {{ (request()->is('/')) ? 'active' : '' }}">
-                    <a href="{{ route('home') }}" class="nav-link">Home</a>
+                    <a href="{{ route('home') }}" class="nav-link">Beranda</a>
                 </li>
                 <li class="nav-item  {{ (request()->is('categories*')) ? 'active' : '' }}">
-                    <a href="{{ route('categories') }}" class="nav-link">Categories</a>
+                    <a href="{{ route('categories') }}" class="nav-link">Kategori</a>
                 </li>
-                <li class="nav-item  {{ (request()->is('/rewards*')) ? 'active' : '' }}" >
-                    <a href="#" class="nav-link">Rewards</a>
+                <li class="nav-item  {{ (request()->is('/promo*')) ? 'active' : '' }}" >
+                    <a href="#" class="nav-link">Promo</a>
                 </li>
 
                 {{-- Jika belum login --}}
                 @guest
                     <li class="nav-item">
-                        <a href="{{ route('register') }}" class="nav-link">Sign Up</a>
+                        <a href="{{ route('register') }}" class="nav-link">Mendaftar</a>
                     </li>
                     <li class="nav-item">
                         <a
                         href="{{ route('login') }}"
                         class="nav-link btn btn-success px-4 text-white"
-                        >Sign In
+                        >Masuk
                         </a>
                     </li>
                 @endguest
@@ -74,18 +74,18 @@
                             @if ($user_roles == 'USER')
                                 <a href="{{ route('dashboard') }}" class="dropdown-item">Dashboard</a>    
                             @else
-                                <a href="{{ url('/admin') }}" class="dropdown-item">Admin</a>
+                                <a href="{{ url('/admin') }}" class="dropdown-item">Administrator</a>
                                 <a href="{{ route('dashboard') }}" class="dropdown-item">Dashboard</a>
                             @endif
 
                             <a href="{{ route('dashboard-settings-account') }}" class="dropdown-item"
-                                >Setting</a
+                                >Pengaturan</a
                             >
                             <div class="dropdown-divider"></div>
                             <a href=href="{{ route('logout') }}" onclick="event.preventDefault();
                                 document.getElementById('logout-form').submit();" 
                                 class="dropdown-item">
-                                Logout
+                                Keluar
                             </a>
                             <form id="logout-form" action="{{ route('logout') }}" method="POST" class="d-none">
                                 @csrf
@@ -117,13 +117,13 @@
                     <a href="{{ route('dashboard-settings-account') }}" class="nav-link">Hi, {{ Auth::user()->name }}</a>
                 </li>
                 <li class="nav-item">
-                    <a href="{{ route('cart') }}" class="nav-link d-inline-block">Cart</a>
+                    <a href="{{ route('cart') }}" class="nav-link d-inline-block">Keranjang</a>
                 </li>
                 <div class="dropdown-divider"></div>
                 <li class="nav-item">
                     <a href="{{ route('logout') }}" onclick="event.preventDefault();
                     document.getElementById('logout-form').submit();" class="nav-link">
-                    Logout
+                    Keluar
                     </a>
                     <form id="logout-form" action="{{ route('logout') }}" method="POST" class="d-none">
                         @csrf

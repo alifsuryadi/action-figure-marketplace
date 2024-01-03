@@ -45,7 +45,6 @@ Route::get('/register/success', [RegisterController::class, 'success'])
 
 
 
-
 Route::group(['middleware' => ['auth']], function (){
 
     Route::get('/cart', [CartController::class, 'index'])->name('cart');

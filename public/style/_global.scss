@@ -4,22 +4,23 @@
 // global = stayling untuk semua halaman
 
 body {
-  font-family: "Poppins", sans-serif;
+    font-family: "Poppins", sans-serif;
+    overflow-x: hidden;
 }
 
 .page-content {
-  margin-top: 100px;
+    margin-top: 100px;
 }
 
 footer {
-  border-top: 1px solid #e4e4e4;
-  margin-top: 150px;
+    border-top: 1px solid #e4e4e4;
+    margin-top: 150px;
 
-  p {
-    color: #979797;
-  }
+    p {
+        color: #979797;
+    }
 }
 
 .form-control {
-  background-color: #f3f3f3;
+    background-color: #f3f3f3;
 }
