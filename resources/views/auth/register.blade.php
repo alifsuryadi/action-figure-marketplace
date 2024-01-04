@@ -1,7 +1,7 @@
 @extends('layouts.auth')
 
 @section('title')
-    Store Register Page
+    Pendaftaran Pengguna
 @endsection
 
 @section('content')

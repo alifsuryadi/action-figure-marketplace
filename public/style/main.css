@@ -9517,6 +9517,13 @@ footer p {
 .page-auth .section-store-auth .btn-signup:not(:disabled):not(.disabled):active:focus, .page-auth .section-store-auth .btn-signup:not(:disabled):not(.disabled).active:focus, .show > .page-auth .section-store-auth .btn-signup.dropdown-toggle:focus {
   box-shadow: 0 0 0 0.2rem rgba(33, 37, 41, 0.5);
 }
+.page-auth .section-store-auth .reset-password {
+  color: #0c0d36;
+}
+.page-auth .section-store-auth .reset-password:hover {
+  color: #28a745;
+  text-decoration: none;
+}
 
 .page-dashboard #page-content-wrapper {
   background: #f5f5fb;

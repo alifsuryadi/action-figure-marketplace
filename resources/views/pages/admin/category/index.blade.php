@@ -19,7 +19,7 @@
                 <div class="col-md-12">
                     <div class="card">
                         <div class="card-body">
-                            <a href="{{ route('category.create') }}" class="btn btn-primary mb-3">
+                            <a href="{{ route('category.create') }}" class="btn btn-success mb-3">
                                 + Tambah Kategori Baru
                             </a>
                             <div class="table-responsive">
