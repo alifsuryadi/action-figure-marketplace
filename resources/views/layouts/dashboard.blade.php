@@ -6,8 +6,8 @@
       name="viewport"
       content="width=device-width, initial-scale=1, shrink-to-fit=no"
     />
-    <meta name="description" content="" />
-    <meta name="author" content="" />
+    <meta name="description" content="Action Figure Marketplace" />
+    <meta name="author" content="Alif Suryadi" />
 
     <title>@yield('title')</title>
 
@@ -68,17 +68,17 @@
 
                       <div class="dropdown-menu">
                         <a href="{{ route('home') }}" class="dropdown-item"
-                          >Home</a
+                          >Beranda</a
                         >
                         <a href="{{ route('dashboard-settings-account') }}" class="dropdown-item"
-                          >Setting</a
+                          >Pengaturan</a
                         >
                         <div class="dropdown-divider"></div>
                         <a href="{{ route('logout') }}" onclick="event.preventDefault();
                             document.getElementById('logout-form').submit();" 
                             class="dropdown-item"
                           >
-                            Logout
+                            Keluar
                         </a>
                         <form id="logout-form" action="{{ route('logout') }}" method="POST" class="d-none">
                               @csrf
@@ -110,10 +110,10 @@
                     <a href="{{ route('dashboard-settings-account') }}" class="nav-link">Hi, {{ Auth::user()->name }}</a>
                   </li>
                   <li class="nav-item">
-                    <a href="{{ route('home') }}" class="nav-link">Home</a>
+                    <a href="{{ route('home') }}" class="nav-link">Beranda</a>
                   </li>
                   <li class="nav-item">
-                    <a href="{{ route('cart') }}" class="nav-link d-inline-block">Cart</a>
+                    <a href="{{ route('cart') }}" class="nav-link d-inline-block">Keranjang</a>
                   </li>
                 </ul>
               </div>

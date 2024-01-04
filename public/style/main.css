@@ -9254,13 +9254,20 @@ footer p {
   transition: background-color 100ms linear;
 }
 
+.navbar-fixed-top-auth.scrolled {
+  background-color: #ffffff !important;
+  transition: background-color 100ms linear;
+}
+
 .navbar-color {
   background-color: transparent;
 }
 
 .page-home h5 {
-  font-weight: 300;
+  margin-top: 30px;
+  font-weight: 500;
   margin-bottom: 15px;
+  font-size: 25px;
 }
 .page-home .store-trend-categories {
   margin-top: 30px;
@@ -9311,9 +9318,9 @@ footer p {
 }
 .page-details .store-heading h1 {
   font-size: 24px;
-  font-weight: 400;
+  font-weight: 500;
   line-height: normal;
-  margin-bottom: 0;
+  margin-bottom: 5px;
 }
 .page-details .store-heading .owner {
   color: #979797;
@@ -9334,8 +9341,9 @@ footer p {
   line-height: 180%;
 }
 .page-details .store-review h4 {
+  margin-top: 20px;
   font-size: 18px;
-  font-weight: 400;
+  font-weight: 500;
 }
 .page-details .store-review .media {
   margin-bottom: 20px;
@@ -9345,7 +9353,7 @@ footer p {
 }
 .page-details .store-review .media .media-body h5 {
   color: #0c0d36;
-  font-size: 16px;
+  font-size: 18px;
   font-weight: 500;
 }
 .page-details .store-review .media .media-body p {
@@ -9562,7 +9570,7 @@ footer p {
 .page-dashboard .section-content h5 {
   color: #0c0d36;
   line-height: 27px;
-  font-size: 18px;
+  font-size: 20px;
   font-weight: 500;
 }
 .page-dashboard .section-content .dashboard-title {
@@ -9640,6 +9648,7 @@ footer p {
   z-index: 1;
   overflow: hidden;
   position: relative;
+  box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.2);
 }
 .component-products .products-thumbnail:hover .products-image, .component-products .products-thumbnail:focus .products-image {
   transform: scale(1.1);
@@ -9766,7 +9775,7 @@ footer p {
 .animation-login .wrapper div {
   height: 60px;
   width: 60px;
-  background: rgba(40, 167, 69, 0.5);
+  border: 2px solid rgba(40, 167, 69, 0.7);
   border-radius: 50px;
   position: absolute;
   top: 10%;

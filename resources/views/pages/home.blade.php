@@ -148,7 +148,7 @@
                         data-aos-delay="{{ $incrementProduct += 100 }}"
                         >
                         <a href="{{ route('detail', $product->slug) }}" class="component-products d-block">
-                            <div class="products-thumbnail" style="box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.2);">
+                            <div class="products-thumbnail">
                                 <div
                                     class="products-image"
                                     style="
@@ -165,7 +165,7 @@
                                 <p>{{ $product->name }}</p>
                             </div>
                             <div class="products-price">
-                                <p>${{ number_format($product->price) }}</p>
+                                <p>Rp {{ number_format($product->price) }}</p>
                             </div>
                         </a>
                     </div>

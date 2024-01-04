@@ -1,5 +1,5 @@
 <nav
-    class="navbar navbar-expand-lg navbar-light navbar-store fixed-top navbar-fixed-top"
+    class="navbar navbar-expand-lg navbar-light navbar-store fixed-top navbar-fixed-top-auth scrolled"
     data-aos="fade-down"
     >
     <div class="container">

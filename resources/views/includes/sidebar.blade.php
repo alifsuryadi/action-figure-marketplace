@@ -17,37 +17,39 @@
       <a
         href="{{ route('dashboard-product') }}"
         class="list-group-item list-group-item-action {{ (request()->is('dashboard/products*')) ? 'active' : '' }}"
-        >My Products</a
+        >Produk Saya</a
       >
     </div>
     <div class="list-group list-group-flush">
       <a
         href="{{ route('dashboard-transaction') }}"
         class="list-group-item list-group-item-action {{ (request()->is('dashboard/transactions*')) ? 'active' : '' }}"
-        >Transactions</a
+        >Transaksi</a
       >
     </div>
     <div class="list-group list-group-flush">
       <a
         href="{{ route('dashboard-settings-store') }}"
         class="list-group-item list-group-item-action {{ (request()->is('dashboard/setting*')) ? 'active' : '' }}"
-        >Store Settings</a
+        >Pengaturan Toko</a
       >
     </div>
     <div class="list-group list-group-flush">
       <a
         href="{{ route('dashboard-settings-account') }}"
         class="list-group-item list-group-item-action {{ (request()->is('dashboard/account*')) ? 'active' : '' }}"
-        >My Account</a
+        >Akun Saya</a
       >
     </div>
+    <hr>
     <div class="list-group list-group-flush">
       <a href="{{ route('logout') }}" onclick="event.preventDefault();
         document.getElementById('logout-form').submit();" 
         class="list-group-item list-group-item-action"
       >
-        Sign Out
+        Keluar
       </a>
+      
       <form id="logout-form" action="{{ route('logout') }}" method="POST" class="d-none">
           @csrf
       </form>

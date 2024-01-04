@@ -18,9 +18,9 @@
                 <div class="col-12">
                     <ol class="breadcrumb">
                         <li class="breadcrumb-item">
-                            <a href="/index.html">Home</a>
+                            <a href="/index.html">Beranda</a>
                         </li>
-                        <li class="breadcrumb-item active">Cart</li>
+                        <li class="breadcrumb-item active">Keranjang</li>
                     </ol>
                 </div>
             </div>
@@ -35,10 +35,10 @@
                     <table class="table table-borderless table-cart">
                         <thead>
                             <tr>
-                                <th>Image</th>
-                                <th>Name &amp; Seller</th>
-                                <th>Price</th>
-                                <th>Menu</th>
+                                <th>Gambar</th>
+                                <th>Nama &amp; Penjual</th>
+                                <th>Toko</th>
+                                <th>Aksi</th>
                             </tr>
                         </thead>
                         <tbody>
@@ -66,19 +66,19 @@
                                         {{ $cart->product->name }}
                                     </div>
                                     <div class="product-subtitle">
-                                        by {{ $cart->product->user->store_name }}
+                                        Toko :  {{ $cart->product->user->store_name }}
                                     </div>
                                 </td>
                                 <td style="width: 35%">
-                                    <div class="product-title">${{ number_format($cart->product->price)  }}</div>
-                                    <div class="product-subtitle">USD</div>
+                                    <div class="product-title">Rp {{ number_format($cart->product->price)  }}</div>
+                                    <div class="product-subtitle">IDR</div>
                                 </td>
                                 <td style="width: 20%">
                                     <form action="{{ route('cart-delete', $cart->id) }}" method="POST">
                                         @method('DELETE')
                                         @csrf
                                         <button type="submit" class="btn btn-remove-cart">
-                                            Remove
+                                            Hapus
                                         </button>
                                     </form>
 
@@ -100,7 +100,7 @@
                     <hr />
                 </div>
                 <div class="col-12">
-                    <h2 class="mb-4">Shipping Details</h2>
+                    <h2 class="mb-4">Rincian pengiriman</h2>
                 </div>
             </div>
 
@@ -114,7 +114,7 @@
                 <div class="row mb-2" data-aos="fade-up" data-aos-delay="200">
                     <div class="col-md-6">
                         <div class="form-group">
-                            <label for="address_one">Addres 1</label>
+                            <label for="address_one">Alamat 1</label>
                             <input
                                 type="text"
                                 class="form-control"
@@ -127,7 +127,7 @@
                     </div>
                     <div class="col-md-6">
                         <div class="form-group">
-                            <label for="address_two">Addres 2</label>
+                            <label for="address_two">Alamat 2</label>
                             <input
                                 type="text"
                                 class="form-control"
@@ -140,7 +140,7 @@
                     </div>
                     <div class="col-md-4">
                         <div class="form-group">
-                            <label for="provinces_id">Province</label>
+                            <label for="provinces_id">Provinsi</label>
 
                             {{-- jika data ada --}}
                             <select
@@ -150,35 +150,35 @@
                                 v-if="provinces"
                                 v-model="provinces_id"
                             >
-                                <option value="" disabled>-- Select Province --</option>
+                                <option value="" disabled>-- Pilih Provinsi --</option>
                                 {{-- @{{  }} = pake @ untuk membedakan variable vue dan blade --}}
                                 <option v-for="province in provinces" :value="province.id">@{{ province.name }}</option>  
                             </select>
 
                             {{-- JIka tidak ada data --}}
                             <select v-else class="form-control">
-                                <option value="" disabled>-- Select Province --</option>
+                                <option value="" disabled>-- Pilih Provinsi --</option>
                             </select>
                         </div>
                     </div>
                     <div class="col-md-4">
                         <div class="form-group">
-                            <label for="regencies_id">City</label>
+                            <label for="regencies_id">Kota</label>
                             {{-- jika data ada --}}
                             <select name="regencies_id" id="regencies_id" class="form-control" v-if="regencies" v-model="regencies_id">
-                                <option value="" disabled>-- Select City --</option>
+                                <option value="" disabled>-- Pilih Kota --</option>
                                 <option v-for="regency in regencies" :value="regency.id">@{{ regency.name }}</option> 
                             </select>
 
                             {{-- JIka tidak ada data --}}
                             <select v-else class="form-control">
-                                <option value="" disabled>-- Select City --</option>
+                                <option value="" disabled>-- Pilih Kota --</option>
                             </select>
                         </div>
                     </div>
                     <div class="col-md-4">
                         <div class="form-group">
-                            <label for="zip_code">Postal Code</label>
+                            <label for="zip_code">Kode Pos</label>
                             <input
                                 type="number"
                                 class="form-control"
@@ -191,7 +191,7 @@
                     </div>
                     <div class="col-md-6">
                         <div class="form-group">
-                            <label for="country">Country</label>
+                            <label for="country">Negara</label>
                             <input
                                 type="text"
                                 class="form-control"
@@ -204,7 +204,7 @@
                     </div>
                     <div class="col-md-6">
                         <div class="form-group">
-                            <label for="phone_number">Mobile</label>
+                            <label for="phone_number">Telepon</label>
                             <input
                                 type="tel"
                                 class="form-control"
@@ -223,26 +223,26 @@
                         <hr />
                     </div>
                     <div class="col-12">
-                        <h2 class="mb-2">Payment Informations</h2>
+                        <h2 class="mb-2">Informasi Pembayaran</h2>
                     </div>
                 </div>
 
                 <!-- Payment informations -->
                 <div class="row" data-aos="fade-up" data-aos-delay="200">
                     <div class="col-4 col-md-2">
-                        <div class="product-title">$0</div>
-                        <div class="product-subtitle">Country Tax</div>
+                        <div class="product-title">Rp 0</div>
+                        <div class="product-subtitle">Pajak Negara</div>
                     </div>
                     <div class="col-4 col-md-3">
-                        <div class="product-title">$0</div>
-                        <div class="product-subtitle">Product Insurance</div>
+                        <div class="product-title">Rp 0</div>
+                        <div class="product-subtitle">Asuransi Produk</div>
                     </div>
                     <div class="col-4 col-md-2">
-                        <div class="product-title">$0</div>
-                        <div class="product-subtitle">Ship to your location</div>
+                        <div class="product-title">Rp 0</div>
+                        <div class="product-subtitle">Ongkos Kirim</div>
                     </div>
                     <div class="col-4 col-md-2">
-                        <div class="product-title text-success">${{ number_format($totalPrice)}}</div>
+                        <div class="product-title text-success" style="font-weight: 600">Rp {{ number_format($totalPrice)}}</div>
                         <div class="product-subtitle">Total</div>
                     </div>
                     <div class="col-8 col-md-3">
@@ -250,7 +250,7 @@
                             type="submit"
                             class="btn btn-success mt-4 px-4 btn-block"
                             >
-                            Checkout Now
+                            Beli Sekarang
                         </button>
                     </div>
                 </div>

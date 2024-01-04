@@ -6,7 +6,7 @@
             name="viewport"
             content="width=device-width, initial-scale=1, shrink-to-fit=no"
         />
-        <meta name="description" content="" />
+        <meta name="description" content="Action Figure Marketplace" />
         <meta name="author" content="" />
 
         <title>@yield('title')</title>
@@ -74,13 +74,13 @@
                                             <div class="dropdown-menu">
 
                                                 <a href="{{ route('home') }}" class="dropdown-item">
-                                                    Home
+                                                    Beranda
                                                 </a>
                                                 <div class="dropdown-divider"></div>
                                                 <a href=href="{{ route('logout') }}" onclick="event.preventDefault();
                                                         document.getElementById('logout-form').submit();" 
                                                         class="dropdown-item">
-                                                    Logout
+                                                    Keluar
                                                 </a>
                                                 <form id="logout-form" action="{{ route('logout') }}" method="POST" class="d-none">
                                                     @csrf
@@ -99,13 +99,13 @@
                                         >
                                     </li>
                                     <li class="nav-item">
-                                        <a href="{{ route('home') }}" class="nav-link">Home</a>
+                                        <a href="{{ route('home') }}" class="nav-link">Beranda</a>
                                     </li>
                                     <li class="nav-item">
                                         <a href=href="{{ route('logout') }}" onclick="event.preventDefault();
                                                 document.getElementById('logout-form').submit();" 
                                                 class="dropdown-item nav-link">
-                                            Logout
+                                            Keluar
                                         </a>
                                         <form id="logout-form" action="{{ route('logout') }}" method="POST" class="d-none">
                                             @csrf

@@ -18,9 +18,9 @@
                 <div class="col-12">
                     <ol class="breadcrumb">
                         <li class="breadcrumb-item">
-                            <a href="/index.html">Home</a>
+                            <a href="/index.html">Beranda</a>
                         </li>
-                        <li class="breadcrumb-item active">Product Details</li>
+                        <li class="breadcrumb-item active">Detail Produk</li>
                     </ol>
                 </div>
             </div>
@@ -73,8 +73,8 @@
                 <div class="row">
                     <div class="col-lg-8">
                         <h1>{{ $product->name }}</h1>
-                        <div class="owner">By {{ $product->user->store_name }}</div>
-                        <div class="price">${{ number_format($product->price) }}</div>
+                        <div class="owner">Toko :  {{ $product->user->store_name }}</div>
+                        <div class="price">Rp {{ number_format($product->price) }}</div>
                     </div>
                     <div class="col-lg-2" data-aos="zoom-in">
 
@@ -84,7 +84,7 @@
                             <button
                                 type="submit"
                                 class="btn btn-success btn-block text-white px-4 mb-3"
-                                >Add to Cart
+                                >Tambah ke keranjang
                             </button>        
                         </form>                   
 
@@ -92,7 +92,7 @@
                         <a
                             href="{{ route('login') }}"
                             class="btn btn-success btn-block text-white px-4 mb-3"
-                            >Sign in to Add</a
+                            >Masuk untuk belanja</a
                         >
                         @endauth
 
@@ -116,7 +116,7 @@
             <div class="container">
                 <div class="row">
                     <div class="col-12 col-lg-8 mt-3 mb-3">
-                        <h4>Customer Review (3)</h4>
+                        <h4>Ulasan Pelanggan (3)</h4>
                     </div>
                 </div>
                 <div class="row">
@@ -131,9 +131,10 @@
                                 <div class="media-body">
                                     <h5 class="mt-2 mb-1">Hazza Risky</h5>
                                     <p>
-                                        I thought it was not good for living
-                                        room. I really happy to decided buy this
-                                        product last week now feels like homey.
+                                        Setelah membeli action figure ini, saya sangat senang dengan 
+                                        keputusan pembelian. Terlepas dari awalnya saya meragukan kesesuaian 
+                                        dengan ruang tamu, action figure ini memberikan sentuhan estetika yang 
+                                        luar biasa.
                                     </p>
                                 </div>
                             </li>
@@ -146,10 +147,9 @@
                                 <div class="media-body">
                                     <h5 class="mt-2 mb-1">Anna Sukkirata</h5>
                                     <p>
-                                        Color is great with the minimalist
-                                        concept. Even I thought it was made by
-                                        Cactus industry. I do really satisfied
-                                        with this.
+                                        Kualitas action figure ini luar biasa. 
+                                        Detailnya halus, dan bahan yang digunakan terasa tahan lama. 
+                                        Saya terkesan dengan kualitas pembuatan yang terlihat dari setiap aspek action figure. 
                                     </p>
                                 </div>
                             </li>
@@ -162,10 +162,11 @@
                                 <div class="media-body">
                                     <h5 class="mt-2 mb-1">Dakimu Wangi</h5>
                                     <p>
-                                        When I saw at first, it was really
-                                        awesome to have with. Just let me know
-                                        if there is another upcoming product
-                                        like this.
+                                        Saya perlu menambahkan bahwa interaksi dengan 
+                                        customer service dari "{{ $product->user->store_name }}" sangat memuaskan. 
+                                        Mereka responsif terhadap pertanyaan saya dan memberikan 
+                                        informasi yang diperlukan dengan jelas. Pelayanan pelanggan 
+                                        yang baik membuat pengalaman berbelanja semakin menyenangkan.
                                     </p>
                                 </div>
                             </li>

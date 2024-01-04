@@ -6,8 +6,8 @@
       name="viewport"
       content="width=device-width, initial-scale=1, shrink-to-fit=no"
     />
-    <meta name="description" content="" />
-    <meta name="author" content="" />
+    <meta name="description" content="Action Figure Marketplace" />
+    <meta name="author" content="Alif Suryadi" />
 
     <title>@yield('title')</title>
 
