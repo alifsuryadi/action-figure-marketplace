@@ -18,12 +18,11 @@
 
     .decoration {
         position: absolute;
-        right: 20px;
+        right: 5px;
         top: 700px;
 
         @include media-breakpoint-down(sm) {
-            right: 20px;
-            top: 800px;
+            top: 1000px;
         }
 
         img {

@@ -85,6 +85,7 @@
                                                 type="file"
                                                 name="photo"
                                                 class="form-control"
+                                                multiple
                                             />
                                             <p class="text-muted">
                                                 Kamu dapat memilih lebih dari satu

@@ -9277,13 +9277,12 @@ footer p {
 }
 .page-home .decoration {
   position: absolute;
-  right: 20px;
+  right: 5px;
   top: 700px;
 }
 @media (max-width: 767.98px) {
   .page-home .decoration {
-    right: 20px;
-    top: 800px;
+    top: 1000px;
   }
 }
 .page-home .decoration img {

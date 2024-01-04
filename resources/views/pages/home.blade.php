@@ -180,7 +180,8 @@
     </section>
     
 
-    <section class="decoration" data-aos="fade-up-left">
+    <section class="decoration" data-aos="fade-up"
+        data-aos-anchor-placement="bottom-bottom">
         <img src="/images/decoration/One Piece.png" alt="">
     </section>
 </div>

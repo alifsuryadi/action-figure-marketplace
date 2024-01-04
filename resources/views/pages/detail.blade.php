@@ -133,9 +133,8 @@
                                     <h5 class="mt-2 mb-1">Hazza Risky</h5>
                                     <p>
                                         Setelah membeli action figure ini, saya sangat senang dengan 
-                                        keputusan pembelian. Terlepas dari awalnya saya meragukan kesesuaian 
-                                        dengan ruang tamu, action figure ini memberikan sentuhan estetika yang 
-                                        luar biasa.
+                                        memutuskan membelinya. Terlepas dari awalnya saya meragukan kesesuaian 
+                                        dengan harga yang cukup mahal bagi saya.
                                     </p>
                                 </div>
                             </li>

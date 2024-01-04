@@ -198,18 +198,19 @@
                                     </div>
                                 </div>
 
-                            </form>
-
-                            <div class="row mt-4">
-                                <div class="col-12 text-right">
-                                    <button
-                                        type="submit"
-                                        class="btn btn-lg btn-success mt-4"
-                                    >
-                                        Simpan Perubahan
-                                    </button>
+                                <div class="row mt-4">
+                                    <div class="col-12 text-right">
+                                        <button
+                                            type="submit"
+                                            class="btn btn-lg btn-success mt-4"
+                                        >
+                                            Simpan Perubahan
+                                        </button>
+                                    </div>
                                 </div>
-                            </div>
+
+                            </form>
+                            
                         </div>
                     </div>
                 </div>

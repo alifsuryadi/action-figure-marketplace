@@ -18,7 +18,7 @@ class CategoryController extends Controller
     {
         
         $categories = Category::all();
-        $products = Product::with(['galleries'])->paginate(32);  //bisa back & next
+        $products = Product::with(['galleries'])->paginate(12);  //bisa back & next
         
         return view('pages.category', [
             'categories' => $categories,
@@ -32,7 +32,7 @@ class CategoryController extends Controller
         $categories = Category::all();
         $category = Category::where('slug', $slug)->firstOrFail();   // ambil slug category
 
-        $products = Product::with(['galleries'])->where('categories_id', $category->id)->paginate(32);  //id slug
+        $products = Product::with(['galleries'])->where('categories_id', $category->id)->paginate(12);  //id slug
         
         return view('pages.category', [
             'categories' => $categories,

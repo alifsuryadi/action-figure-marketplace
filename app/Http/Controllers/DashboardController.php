@@ -28,7 +28,9 @@ class DashboardController extends Controller
             return $carry + $item->price;
         });
 
-        $costumer = User::where('roles', 'USER')->count();
+
+        // Ambil data pelanggan yang belanja di toko tersebut
+        $costumer = $transactions->get()->pluck('transaction.user.id')->unique()->count();
 
         return view('pages.dashboard', [
             'transaction_count' => $transactions->count(),
