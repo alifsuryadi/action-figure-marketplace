@@ -1,16 +1,16 @@
 @extends('layouts.dashboard') 
 
 @section('title') 
-    Store Dashboard Transaction
+    Dashboard Transaksi Toko
 @endsection 
 
 @section('content')
 <section class="section-content section-dashboard-home" data-aos="fade-up">
     <div class="container-fluid">
         <div class="dashboard-heading">
-            <h2 class="dashboard-title">Transactions</h2>
+            <h2 class="dashboard-title">Transaksi</h2>
             <p class="dashboard-subtitle">
-                Big result start from the small one
+                Hasil besar dimulai dari hal kecil
             </p>
         </div>
         <!-- Dashboard content -->
@@ -32,7 +32,7 @@
                                 role="tab"
                                 aria-controls="pills-home"
                                 aria-selected="true"
-                                >Sell Product</a
+                                >Produk Terjual</a
                             >
                         </li>
                         <li class="nav-item" role="presentation">
@@ -44,7 +44,7 @@
                                 role="tab"
                                 aria-controls="pills-profile"
                                 aria-selected="false"
-                                >Buy Product</a
+                                >Produk Dibeli</a
                             >
                         </li>
                     </ul>

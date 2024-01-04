@@ -18,43 +18,44 @@
       <a
         href="{{ route('product.index') }}"
         class="list-group-item list-group-item-action {{ (request()->is('admin/product')) ? 'active' : '' }}"
-        >Products</a
+        >Produk</a
       >
     </div>
     <div class="list-group list-group-flush">
       <a
         href="{{ route('product-gallery.index') }}"
         class="list-group-item list-group-item-action {{ (request()->is('admin/product-gallery*')) ? 'active' : '' }}"
-        >Galleries</a
+        >Galeri</a
       >
     </div>
     <div class="list-group list-group-flush">
       <a
         href="{{ route('category.index') }}"
         class="list-group-item list-group-item-action {{ (request()->is('admin/category*')) ? 'active' : '' }}"
-        >Categories</a
+        >Kategori</a
       >
     </div>
     <div class="list-group list-group-flush">
       <a
         href="{{ route('transaction.index') }}"
         class="list-group-item list-group-item-action {{ (request()->is('admin/transaction*')) ? 'active' : '' }}"
-        >Transactions</a
+        >Transaksi</a
       >
     </div>
     <div class="list-group list-group-flush">
       <a
         href="{{ route('user.index') }}"
         class="list-group-item list-group-item-action {{ (request()->is('admin/user*')) ? 'active' : '' }}"
-        >Users</a
+        >Pengguna</a
       >
     </div>
+    <hr>
     <div class="list-group list-group-flush">
       <a href="{{ route('logout') }}" onclick="event.preventDefault();
         document.getElementById('logout-form').submit();" 
         class="list-group-item list-group-item-action"
       >
-        Sign Out
+        Keluar
       </a>
       <form id="logout-form" action="{{ route('logout') }}" method="POST" class="d-none">
           @csrf

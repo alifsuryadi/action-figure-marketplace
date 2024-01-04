@@ -1,7 +1,7 @@
 @extends('layouts.dashboard') 
 
 @section('title') 
-Store Dashboard Transaction Details 
+    Dashboard Detail Transaksi Toko
 @endsection 
 
 
@@ -10,7 +10,7 @@ Store Dashboard Transaction Details
     <div class="container-fluid">
         <div class="dashboard-heading">
             <h2 class="dashboard-title">#{{ $transaction->code }}</h2>
-            <p class="dashboard-subtitle">Transactions Details</p>
+            <p class="dashboard-subtitle">Detail Transaksi</p>
         </div>
         <!-- Dashboard content -->
         <div class="dashboard-content" id="transactionDetails">
@@ -30,7 +30,7 @@ Store Dashboard Transaction Details
                                     <div class="row">
                                         <div class="col-12 col-md-6">
                                             <div class="product-title">
-                                                Customer Name
+                                                Nama Pelanggan
                                             </div>
                                             <div class="product-subtitle">
                                                 {{ $transaction->transaction->user->name }}
@@ -38,7 +38,7 @@ Store Dashboard Transaction Details
                                         </div>
                                         <div class="col-12 col-md-6">
                                             <div class="product-title">
-                                                Product Name
+                                                Nama Produk
                                             </div>
                                             <div class="product-subtitle">
                                                 {{ $transaction->product->name }}
@@ -46,7 +46,7 @@ Store Dashboard Transaction Details
                                         </div>
                                         <div class="col-12 col-md-6">
                                             <div class="product-title">
-                                                Date of Transaction
+                                                Tanggal Transaksi
                                             </div>
                                             <div class="product-subtitle">
                                                 {{ $transaction->created_at }}
@@ -54,7 +54,7 @@ Store Dashboard Transaction Details
                                         </div>
                                         <div class="col-12 col-md-6">
                                             <div class="product-title">
-                                                Payment Status
+                                                Status Pembayaran
                                             </div>
 
                 
@@ -76,7 +76,7 @@ Store Dashboard Transaction Details
                                         </div>
                                         <div class="col-12 col-md-6">
                                             <div class="product-title">
-                                                Total Amount
+                                                Total Pembayaran
                                             </div>
                                             <div class="product-subtitle">
                                                 {{ number_format($transaction->transaction->total_price)  }}
@@ -84,7 +84,7 @@ Store Dashboard Transaction Details
                                         </div>
                                         <div class="col-12 col-md-6">
                                             <div class="product-title">
-                                                Mobile
+                                                Telepon
                                             </div>
                                             <div class="product-subtitle">
                                                 {{ $transaction->transaction->user->phone_number }}
@@ -100,13 +100,13 @@ Store Dashboard Transaction Details
 
                                 <div class="row">
                                     <div class="col-12 mt-4">
-                                        <h5>Shipping Information</h5>
+                                        <h5>Informasi Pengiriman</h5>
                                     </div>
                                     <div class="col-12">
                                         <div class="row">
                                             <div class="col-12 col-md-6">
                                                 <div class="product-title">
-                                                    Address I
+                                                    Alamat I
                                                 </div>
                                                 <div class="product-subtitle">
                                                     {{ $transaction->transaction->user->address_one }}
@@ -114,7 +114,7 @@ Store Dashboard Transaction Details
                                             </div>
                                             <div class="col-12 col-md-6">
                                                 <div class="product-title">
-                                                    Address II
+                                                    Alamat II
                                                 </div>
                                                 <div class="product-subtitle">
                                                     {{ $transaction->transaction->user->address_two }}
@@ -122,7 +122,7 @@ Store Dashboard Transaction Details
                                             </div>
                                             <div class="col-12 col-md-6">
                                                 <div class="product-title">
-                                                    Province
+                                                    Provinsi
                                                 </div>
                                                 <div class="product-subtitle">
                                                     {{ App\Models\Province::find($transaction->transaction->user->provinces_id)->name }}
@@ -130,7 +130,7 @@ Store Dashboard Transaction Details
                                             </div>
                                             <div class="col-12 col-md-6">
                                                 <div class="product-title">
-                                                    City
+                                                    Kota
                                                 </div>
                                                 <div class="product-subtitle">
                                                     {{ App\Models\Regency::find($transaction->transaction->user->regencies_id)->name }}
@@ -138,7 +138,7 @@ Store Dashboard Transaction Details
                                             </div>
                                             <div class="col-12 col-md-6">
                                                 <div class="product-title">
-                                                    Postal Code
+                                                    Kode Pos
                                                 </div>
                                                 <div class="product-subtitle">
                                                     {{ $transaction->transaction->user->zip_code }}
@@ -146,7 +146,7 @@ Store Dashboard Transaction Details
                                             </div>
                                             <div class="col-12 col-md-6">
                                                 <div class="product-title">
-                                                    Country
+                                                    Negara
                                                 </div>
                                                 <div class="product-subtitle">
                                                     {{ $transaction->transaction->user->country }}
@@ -154,7 +154,7 @@ Store Dashboard Transaction Details
                                             </div>
                                             <div class="col-12 col-md-3">
                                                 <div class="product-title">
-                                                    Shipping Status
+                                                    Status Pengiriman 
                                                 </div>
                                                 <select
                                                     name="shipping_status"
@@ -163,20 +163,20 @@ Store Dashboard Transaction Details
                                                     v-model="status"
                                                 >
                                                     <option value="PENDING">
-                                                        Pending
+                                                        Tertunda
                                                     </option>
                                                     <option value="SHIPPING">
-                                                        Shipping
+                                                        Dikirim
                                                     </option>
                                                     <option value="SUCCESS">
-                                                        Success
+                                                        Berhasil
                                                     </option>
                                                 </select>
                                             </div>
                                             <template v-if="status =='SHIPPING' ">
                                                 <div class="col-md-3">
                                                     <div class="product-title">
-                                                        Input Resi
+                                                        Masukan Resi
                                                     </div>
                                                     <input
                                                         type="text"
@@ -190,7 +190,7 @@ Store Dashboard Transaction Details
                                                         type="submit"
                                                         class="btn btn-success mt-4 btn-block"
                                                     >
-                                                        Update Resi
+                                                        Perbarui Resi
                                                     </button>
                                                 </div>
                                             </template>
@@ -206,7 +206,7 @@ Store Dashboard Transaction Details
                                         type="submit"
                                         class="btn btn-lg btn-success mt-4"
                                     >
-                                        Save Now
+                                        Simpan Perubahan
                                     </button>
                                 </div>
                             </div>

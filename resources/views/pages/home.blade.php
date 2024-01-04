@@ -1,7 +1,7 @@
 @extends('layouts.app') 
 
 @section('title') 
-    Store Homapage 
+    Beranda
 @endsection
 
 

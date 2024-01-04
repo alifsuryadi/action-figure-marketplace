@@ -17,7 +17,7 @@ return new class extends Migration
             $table->integer('users_id');
             $table->integer('inscurance_price');
             $table->integer('shipping_price');
-            $table->integer('total_price');
+            $table->decimal('total_price');
             $table->string('transaction_status'); //unpaid/pending/success/failed
             $table->string('code');
 

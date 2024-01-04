@@ -1,16 +1,16 @@
 @extends('layouts.admin') 
 
 @section('title') 
-    Product
+    Produk
 @endsection
 
 @section('content')
 <section class="section-content section-dashboard-home" data-aos="fade-up">
     <div class="container-fluid">
         <div class="dashboard-heading">
-            <h2 class="dashboard-title">Product</h2>
+            <h2 class="dashboard-title">Produk</h2>
             <p class="dashboard-subtitle">
-                Create New Product
+                Tambahkan Produk Baru
             </p>
         </div>
         <!-- Dashboard content -->
@@ -39,15 +39,15 @@
                                 <div class="row">
                                     <div class="col-md-12">
                                         <div class="form-group">
-                                            <label>Nama Product</label>
+                                            <label>Nama Produk</label>
                                             <input type="text" name="name" class="form-control" required>
                                         </div>
                                     </div>
                                     <div class="col-md-12">
                                         <div class="form-group">
-                                            <label>Pemilik Product</label>
+                                            <label>Pemilik Produk</label>
                                             <select name="users_id" class="form-control" required>
-                                                <option value="" disabled selected>-- Select Users --</option>
+                                                <option value="" disabled selected>-- Pilih Toko --</option>
                                                 @foreach ($users as $user)
                                                     <option value="{{ $user->id }}">{{ $user->name }}</option>
                                                 @endforeach
@@ -56,9 +56,9 @@
                                     </div>
                                     <div class="col-md-12">
                                         <div class="form-group">
-                                            <label>Kategori Product</label>
+                                            <label>Kategori Produk</label>
                                             <select name="categories_id" class="form-control" required>
-                                                <option value="" disabled selected>-- Select Categories --</option>
+                                                <option value="" disabled selected>-- Pilih Kategori --</option>
                                                 @foreach ($categories as $category)
                                                     <option value="{{ $category->id }}">{{ $category->name }}</option>
                                                 @endforeach
@@ -67,13 +67,13 @@
                                     </div>
                                     <div class="col-md-12">
                                         <div class="form-group">
-                                            <label>Harga Product</label>
+                                            <label>Harga Produk</label>
                                             <input type="number" name="price" class="form-control" required>
                                         </div>
                                     </div>
                                     <div class="col-md-12">
                                         <div class="form-group">
-                                            <label>Deskripsi Product</label>
+                                            <label>Deskripsi Produk</label>
                                             <textarea name="description" id="editor" class="form-control"></textarea>
                                         </div>
                                     </div>
@@ -81,7 +81,7 @@
                                 <div class="row">
                                     <div class="col text-right">
                                         <button type="submit" class="btn btn-success px-5 mt-5">
-                                            Save Now
+                                            Simpan
                                         </button>
                                     </div>
                                 </div>

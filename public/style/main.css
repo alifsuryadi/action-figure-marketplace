@@ -9306,8 +9306,23 @@ footer p {
 .page-details .store-gallery img {
   border-radius: 10px;
 }
-.page-details .store-gallery .main-image {
+.page-details .store-gallery .images-thumbnail {
+  width: 100%;
+  height: 500px;
+  border-radius: 8px;
+  z-index: 1;
+}
+@media (max-width: 767.98px) {
+  .page-details .store-gallery .images-thumbnail {
+    height: 300px;
+  }
+}
+.page-details .store-gallery .images-thumbnail .main-image {
   margin-bottom: 5px;
+  height: 100%;
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
 }
 .page-details .store-gallery .thumbnail-image {
   margin-bottom: 20px;
@@ -9643,7 +9658,7 @@ footer p {
 }
 .component-products .products-thumbnail {
   width: 100%;
-  height: 150px;
+  height: 200px;
   border-radius: 8px;
   z-index: 1;
   overflow: hidden;
@@ -9674,6 +9689,7 @@ footer p {
   color: #ff7158;
   font-size: 16px;
   font-weight: 500;
+  margin-bottom: 50px;
 }
 
 .store-breadcrumbs .breadcrumb {

@@ -1,16 +1,16 @@
 @extends('layouts.admin') 
 
 @section('title') 
-    User
+    Pengguna
 @endsection
 
 @section('content')
 <section class="section-content section-dashboard-home" data-aos="fade-up">
     <div class="container-fluid">
         <div class="dashboard-heading">
-            <h2 class="dashboard-title">User</h2>
+            <h2 class="dashboard-title">Pengguna</h2>
             <p class="dashboard-subtitle">
-                Edit User
+                Ubah Pengguna
             </p>
         </div>
         <!-- Dashboard content -->
@@ -40,7 +40,7 @@
                                 <div class="row">
                                     <div class="col-md-12">
                                         <div class="form-group">
-                                            <label>Nama User</label>
+                                            <label>Nama Pengguna</label>
                                             <input type="text" name="name" class="form-control" required value="{{ $item->name }}">
                                         </div>
                                     </div>
@@ -52,7 +52,7 @@
                                     </div>
                                     <div class="col-md-12">
                                         <div class="form-group">
-                                            <label>Password</label>
+                                            <label>Kata Sandi</label>
                                             <input type="password" name="password" class="form-control">
                                             <small class="text-muted">**Kosongkan jika tidak ingin mengganti password</small>
                                         </div>
@@ -71,7 +71,7 @@
                                 <div class="row">
                                     <div class="col text-right">
                                         <button type="submit" class="btn btn-success px-5 mt-2">
-                                            Save Now
+                                            Simpan Perubahan
                                         </button>
                                     </div>
                                 </div>

@@ -1,15 +1,15 @@
 @extends('layouts.dashboard') 
 
 @section('title') 
-    Store Dashboard Product
+    Dashboard Produk Toko
 @endsection 
 
 @section('content')
 <section class="section-content section-dashboard-home" data-aos="fade-up">
     <div class="container-fluid">
         <div class="dashboard-heading">
-            <h2 class="dashboard-title">My Products</h2>
-            <p class="dashboard-subtitle">Manage it well and get money</p>
+            <h2 class="dashboard-title">Produk Saya</h2>
+            <p class="dashboard-subtitle">Kelola dengan tokomu dengan baik dan dapatkan uang</p>
         </div>
         <!-- Dashboard content -->
         <div class="dashboard-content">
@@ -19,7 +19,7 @@
                         href="{{ route('dashboard-product-create') }}"
                         class="btn btn-success"
                     >
-                        Add New Product
+                        Tambahkan Produk Baru
                     </a>
                 </div>
             </div>

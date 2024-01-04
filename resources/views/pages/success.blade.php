@@ -11,17 +11,17 @@
             <div class="row align-items-center row-login justify-content-center">
             <div class="col-lg-6 text-center">
                 <img src="/images/success.svg" class="mb-4" alt="" />
-                <h2>Transaction Processed!</h2>
+                <h2>Transaksi Diproses!</h2>
                 <p>
                 Silahkan tunggu konfirmasi email dari kami dan kami akan
                 menginformasikan resi secept mungkin!
                 </p>
                 <div>
                 <a href="/dashboard" class="btn btn-success w-50 mt-4"
-                    >My Dashboard</a
+                    >Dashboard Saya</a
                 >
                 <a href="/" class="btn btn-signup w-50 mt-2"
-                    >Go To Shopping</a
+                    >Pergi Belanja</a
                 >
                 </div>
             </div>

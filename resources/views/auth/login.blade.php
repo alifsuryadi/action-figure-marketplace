@@ -18,8 +18,7 @@
                 </div>
                 <div class="col-lg-5">
                     <h2>
-                    Belanja kebutuhan utama, <br />
-                    menjadi lebih mudah
+                    Belanja action figure <br> favoritmu, menjadi lebih mudah
                     </h2>
                     <form method="POST" class="mt-3" action="{{ route('login') }}">
                         @csrf

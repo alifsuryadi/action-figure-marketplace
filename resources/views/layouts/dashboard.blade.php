@@ -64,7 +64,12 @@
                         alt="Profile picture"
                         class="rounded-circle mr-2 profile-picture"
                       />
-                      Hi, {{ Auth::user()->name }}
+
+                      @php
+                          $fullName = Auth::user()->name;
+                          $firstName = strtok($fullName, ' '); // Mengambil token pertama (nama depan)
+                      @endphp
+                      Hi, {{ $firstName }}
 
                       <div class="dropdown-menu">
                         <a href="{{ route('home') }}" class="dropdown-item"

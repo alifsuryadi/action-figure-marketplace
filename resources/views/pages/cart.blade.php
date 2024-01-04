@@ -114,20 +114,21 @@
                 <div class="row mb-2" data-aos="fade-up" data-aos-delay="200">
                     <div class="col-md-6">
                         <div class="form-group">
-                            <label for="address_one">Alamat 1</label>
+                            <label for="address_one">Alamat I</label>
                             <input
                                 type="text"
                                 class="form-control"
                                 id="address_one"
                                 name="address_one"
                                 placeholder="Exp: Jln. Sudirman"
+                                required
                                 value="{{ $user->address_one }}"
                             />
                         </div>
                     </div>
                     <div class="col-md-6">
                         <div class="form-group">
-                            <label for="address_two">Alamat 2</label>
+                            <label for="address_two">Alamat II</label>
                             <input
                                 type="text"
                                 class="form-control"
@@ -147,6 +148,7 @@
                                 name="provinces_id"
                                 id="provinces_id"
                                 class="form-control"
+                                required
                                 v-if="provinces"
                                 v-model="provinces_id"
                             >
@@ -165,7 +167,7 @@
                         <div class="form-group">
                             <label for="regencies_id">Kota</label>
                             {{-- jika data ada --}}
-                            <select name="regencies_id" id="regencies_id" class="form-control" v-if="regencies" v-model="regencies_id">
+                            <select name="regencies_id" id="regencies_id" class="form-control" v-if="regencies" v-model="regencies_id" required>
                                 <option value="" disabled>-- Pilih Kota --</option>
                                 <option v-for="regency in regencies" :value="regency.id">@{{ regency.name }}</option> 
                             </select>
@@ -185,6 +187,7 @@
                                 id="zip_code"
                                 name="zip_code"
                                 placeholder="Exp: 123999"
+                                required
                                 value="{{ $user->zip_code }}"
                             />
                         </div>
@@ -198,6 +201,7 @@
                                 id="country"
                                 name="country"
                                 placeholder="Exp: Indonesia"
+                                required
                                 value="{{ $user->country }}"
                             />
                         </div>
@@ -210,6 +214,7 @@
                                 class="form-control"
                                 id="phone_number"
                                 name="phone_number"
+                                required
                                 placeholder="Exp: +628 2020 1111"
                                 value="{{ $user->phone_number }}"
                             />

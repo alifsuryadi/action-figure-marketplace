@@ -1,16 +1,16 @@
 @extends('layouts.admin') 
 
 @section('title') 
-    User
+    Pengguna
 @endsection
 
 @section('content')
 <section class="section-content section-dashboard-home" data-aos="fade-up">
     <div class="container-fluid">
         <div class="dashboard-heading">
-            <h2 class="dashboard-title">User</h2>
+            <h2 class="dashboard-title">Pengguna</h2>
             <p class="dashboard-subtitle">
-                List of Users
+                Daftar Pengguna
             </p>
         </div>
         <!-- Dashboard content -->
@@ -20,7 +20,7 @@
                     <div class="card">
                         <div class="card-body">
                             <a href="{{ route('user.create') }}" class="btn btn-primary mb-3">
-                                + Tambah User Baru
+                                + Tambahkan Pengguna Baru
                             </a>
                             <div class="table-responsive">
                                 <table class="table table-hover scroll-horizontal-vertical w-100" id="crudTable">

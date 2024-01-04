@@ -1,15 +1,15 @@
 @extends('layouts.dashboard') 
 
 @section('title') 
-    Store Dashboard Product Details
+    Dashboard Detail Produk Toko
 @endsection 
 
 @section('content')
 <section class="section-content section-dashboard-home" data-aos="fade-up">
     <div class="container-fluid">
-        <div class="dashboard-heading">
-            <h2 class="dashboard-title">Shirup Marzan</h2>
-            <p class="dashboard-subtitle">Product Details</p>
+        <div class="dashboard-heading row">
+            <h2 class="dashboard-title col-8">{{ $product->name }}</h2>
+            <p class="dashboard-subtitle col-8">Detail Produk</p>
         </div>
         <!-- Dashboard content -->
         <div class="dashboard-content">
@@ -37,7 +37,7 @@
                                 <div class="row">
                                     <div class="col-md-6">
                                         <div class="form-group">
-                                            <label>Product Name</label>
+                                            <label>Nama Produk</label>
                                             <input
                                                 type="text"
                                                 name="name"
@@ -48,12 +48,12 @@
                                     </div>
                                     <div class="col-md-6">
                                         <div class="form-group">
-                                            <label>Price</label>
+                                            <label>Harga</label>
                                             <input
                                                 type="number"
                                                 name="price"
                                                 class="form-control"
-                                                value="{{ $product->price }}"
+                                                value="{{ (int) $product->price }}"
                                             />
                                         </div>
                                     </div>
@@ -64,7 +64,7 @@
                                                 name="categories_id"
                                                 class="form-control"
                                             >
-                                                <option value="" disabled>-- Select Categories --</option>
+                                                <option value="" disabled>-- Pilih Kategori Produk --</option>
                                                 <option value="{{ $product->categories_id }}" selected>Tidak diganti ({{ $product->category->name }})</option>
                                                 @foreach ($categories as $category)
                                                     <option value="{{ $category->id }}">{{ $category->name }}</option>
@@ -74,7 +74,7 @@
                                     </div>
                                     <div class="col-md-12">
                                         <div class="form-group">
-                                            <label for="">Description</label>
+                                            <label for="">Deskripsi</label>
                                             <textarea
                                                 name="description"
                                                 id="editor"
@@ -89,7 +89,7 @@
                                             type="submit"
                                             class="btn btn-success px-5 btn-block"
                                         >
-                                            Save Now
+                                            Simpan Perubahan
                                         </button>
                                     </div>
                                 </div>
@@ -145,7 +145,7 @@
                                             class="btn btn-secondary btn-block mt-2"
                                             onclick="thisFileUpload()"
                                         >
-                                            Add Photo
+                                            Tambahkan Photo
                                         </button>
                                     </form>
                                 </div>

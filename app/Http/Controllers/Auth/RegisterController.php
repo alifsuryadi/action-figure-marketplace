@@ -85,7 +85,7 @@ class RegisterController extends Controller
             'password' => Hash::make($data['password']),
             'store_name' => isset($data['store_name']) ? $data['store_name'] : '',  // jika ada = isi, kalo ngk = kosongkan
             'categories_id' => isset($data['categories_id']) ? $data['categories_id'] : NULL, // NULL kalau integer 
-            'store_status' => isset($data['store_status']) ? 1 : 0, //form pindahkan ke mysql
+            'store_status' => isset($data['is_store_open']) ? 1 : 0, //form pindahkan ke mysql
         ]);
     }
 

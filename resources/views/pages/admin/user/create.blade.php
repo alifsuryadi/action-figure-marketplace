@@ -1,16 +1,16 @@
 @extends('layouts.admin') 
 
 @section('title') 
-    User
+    Pengguna
 @endsection
 
 @section('content')
 <section class="section-content section-dashboard-home" data-aos="fade-up">
     <div class="container-fluid">
         <div class="dashboard-heading">
-            <h2 class="dashboard-title">User</h2>
+            <h2 class="dashboard-title">Pengguna</h2>
             <p class="dashboard-subtitle">
-                Create New User
+                Tambahkan Pengguna Baru
             </p>
         </div>
         <!-- Dashboard content -->
@@ -39,7 +39,7 @@
                                 <div class="row">
                                     <div class="col-md-12">
                                         <div class="form-group">
-                                            <label>Nama User</label>
+                                            <label>Nama Pengguna</label>
                                             <input type="text" name="name" class="form-control" required>
                                         </div>
                                     </div>
@@ -51,7 +51,7 @@
                                     </div>
                                     <div class="col-md-12">
                                         <div class="form-group">
-                                            <label>Password</label>
+                                            <label>Kata Sandi</label>
                                             <input type="password" name="password" class="form-control" required>
                                         </div>
                                     </div>
@@ -59,7 +59,7 @@
                                         <div class="form-group">
                                             <label>Roles</label>
                                             <select name="roles" class="form-control" required>
-                                                <option value="" disabled selected>-- Select Roles --</option>
+                                                <option value="" disabled selected>-- Pilih Roles --</option>
                                                 <option value="ADMIN">Admin</option>
                                                 <option value="USER">User</option>
                                             </select>
@@ -69,7 +69,7 @@
                                 <div class="row">
                                     <div class="col text-right">
                                         <button type="submit" class="btn btn-success px-5 mt-5">
-                                            Save Now
+                                            Simpan
                                         </button>
                                     </div>
                                 </div>

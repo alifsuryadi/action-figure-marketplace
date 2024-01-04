@@ -1,7 +1,7 @@
 @extends('layouts.dashboard') 
 
 @section('title') 
-    Store Dashboard 
+    Dashboard Toko 
 @endsection
 
 
@@ -10,7 +10,7 @@
     <div class="container-fluid">
         <div class="dashboard-heading">
             <h2 class="dashboard-title">Dashboard</h2>
-            <p class="dashboard-subtitle">Look what you have made today!</p>
+            <p class="dashboard-subtitle">Lihat apa yang telah kamu buat hari ini!</p>
         </div>
         <!-- Dashboard content -->
         <div class="dashboard-content">
@@ -18,7 +18,7 @@
                 <div class="col-md-4">
                     <div class="card mb-2">
                         <div class="card-body">
-                            <div class="dashboard-card-title">Customer</div>
+                            <div class="dashboard-card-title">Pelanggan</div>
                             <div class="dashboard-card-subtitle">{{ number_format($costumer) }}</div>
                         </div>
                     </div>
@@ -26,15 +26,15 @@
                 <div class="col-md-4">
                     <div class="card mb-2">
                         <div class="card-body">
-                            <div class="dashboard-card-title">Revenue</div>
-                            <div class="dashboard-card-subtitle">${{ number_format($revenue) }}</div>
+                            <div class="dashboard-card-title">Pendapatan</div>
+                            <div class="dashboard-card-subtitle">Rp {{ number_format($revenue) }}</div>
                         </div>
                     </div>
                 </div>
                 <div class="col-md-4">
                     <div class="card mb-2">
                         <div class="card-body">
-                            <div class="dashboard-card-title">Transaction</div>
+                            <div class="dashboard-card-title">Transaksi</div>
                             <div class="dashboard-card-subtitle">
                                 {{ number_format($transaction_count) }}
                             </div>
@@ -46,7 +46,7 @@
             <!-- Recent transactions -->
             <div class="row mt-3">
                 <div class="col-12 mt-2">
-                    <h5 class="mb-3">Recent Transactions</h5>
+                    <h5 class="mb-3">Transaksi Terakhir</h5>
 
                     @foreach ($transaction_data as $transaction)
                     <a

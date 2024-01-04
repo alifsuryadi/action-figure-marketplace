@@ -1,16 +1,16 @@
 @extends('layouts.admin') 
 
 @section('title') 
-    Product
+    Produk
 @endsection
 
 @section('content')
 <section class="section-content section-dashboard-home" data-aos="fade-up">
     <div class="container-fluid">
         <div class="dashboard-heading">
-            <h2 class="dashboard-title">Product</h2>
+            <h2 class="dashboard-title">Produk</h2>
             <p class="dashboard-subtitle">
-                List of Products
+                Daftar Produk
             </p>
         </div>
         <!-- Dashboard content -->
@@ -20,7 +20,7 @@
                     <div class="card">
                         <div class="card-body">
                             <a href="{{ route('product.create') }}" class="btn btn-primary mb-3">
-                                + Tambah Product Baru
+                                + Tambahkan Produk Baru
                             </a>
                             <div class="table-responsive">
                                 <table class="table table-hover scroll-horizontal-vertical w-100" id="crudTable">

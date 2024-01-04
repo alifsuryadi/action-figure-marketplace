@@ -1,15 +1,15 @@
 @extends('layouts.dashboard') 
 
 @section('title') 
-    Store Dashboard Product Create
+    Dashboard Tambahkan Produk Toko
 @endsection 
 
 @section('content')
 <section class="section-content section-dashboard-home" data-aos="fade-up">
     <div class="container-fluid">
         <div class="dashboard-heading">
-            <h2 class="dashboard-title">Create Product</h2>
-            <p class="dashboard-subtitle">Create your own product</p>
+            <h2 class="dashboard-title">Tambahkan Produk</h2>
+            <p class="dashboard-subtitle">Tambahkan produk Anda sendiri</p>
         </div>
         <!-- Dashboard content -->
         <div class="dashboard-content">
@@ -36,7 +36,7 @@
                                 <div class="row">
                                     <div class="col-md-6">
                                         <div class="form-group">
-                                            <label for="">Product Name</label>
+                                            <label for="">Nama Produk</label>
                                             <input
                                                 type="text"
                                                 name="name"
@@ -46,7 +46,7 @@
                                     </div>
                                     <div class="col-md-6">
                                         <div class="form-group">
-                                            <label for="">Price</label>
+                                            <label for="">Harga</label>
                                             <input
                                                 type="number"
                                                 name="price"
@@ -61,7 +61,7 @@
                                                 name="categories_id"
                                                 class="form-control"
                                             >
-                                                <option value="" disabled selected>-- Select Categories --</option>
+                                                <option value="" disabled selected>-- Pilih kategori --</option>
                                                 @foreach ($categories as $category)
                                                     <option value="{{ $category->id }}">{{ $category->name }}</option>
                                                 @endforeach
@@ -70,7 +70,7 @@
                                     </div>
                                     <div class="col-md-12">
                                         <div class="form-group">
-                                            <label>Description</label>
+                                            <label>Deskripsi</label>
                                             <textarea
                                                 name="description"
                                                 id="editor"
@@ -80,7 +80,7 @@
                                     </div>
                                     <div class="col-md-12">
                                         <div class="form-group">
-                                            <label >Thumbnails</label>
+                                            <label>Photo <span style="font-size: 12px">(Landscape)</span> </label>
                                             <input
                                                 type="file"
                                                 name="photo"
@@ -98,7 +98,7 @@
                                             type="submit"
                                             class="btn btn-success px-5 btn-block"
                                         >
-                                            Create Product
+                                            Tambahkan Produk
                                         </button>
                                     </div>
                                 </div>

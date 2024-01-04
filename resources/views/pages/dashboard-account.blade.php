@@ -1,10 +1,15 @@
-@extends('layouts.dashboard') @section('title') Account Settings @endsection
+@extends('layouts.dashboard') 
+
+@section('title') 
+    Pengaturan Akun
+@endsection
+
 @section('content')
 <section class="section-content section-dashboard-home" data-aos="fade-up">
     <div class="container-fluid">
         <div class="dashboard-heading">
-            <h2 class="dashboard-title">My Account</h2>
-            <p class="dashboard-subtitle">Update your current profile</p>
+            <h2 class="dashboard-title">Akun Saya</h2>
+            <p class="dashboard-subtitle">Perbarui profil Anda saat ini</p>
         </div>
         <!-- Dashboard content -->
         <div class="dashboard-content">
@@ -19,7 +24,7 @@
                                 <div class="row mb-2">
                                     <div class="col-md-6">
                                         <div class="form-group">
-                                            <label for="name">Your Name</label>
+                                            <label for="name">Nama Lengkap</label>
                                             <input
                                                 type="text"
                                                 class="form-control"
@@ -32,7 +37,7 @@
                                     <div class="col-md-6">
                                         <div class="form-group">
                                             <label for="email"
-                                                >Your Email</label
+                                                >Email</label
                                             >
                                             <input
                                                 type="email"
@@ -46,7 +51,7 @@
                                     <div class="col-md-6">
                                         <div class="form-group">
                                             <label for="address_one"
-                                                >Addres 1</label
+                                                >Alamat I</label
                                             >
                                             <input
                                                 type="text"
@@ -60,7 +65,7 @@
                                     <div class="col-md-6">
                                         <div class="form-group">
                                             <label for="address_two"
-                                                >Addres 2</label
+                                                >Alamat 2</label
                                             >
                                             <input
                                                 type="text"
@@ -74,7 +79,7 @@
 
                                     <div class="col-md-4">
                                         <div class="form-group">
-                                            <label for="provinces_id">Province</label>
+                                            <label for="provinces_id">Provinsi</label>
                 
                                             {{-- jika data ada --}}
                                             <select
@@ -84,29 +89,29 @@
                                                 v-if="provinces"
                                                 v-model="provinces_id"
                                             >
-                                                <option value="" disabled>-- Select Province --</option>
+                                                <option value="" disabled>-- Pilih Provinsi --</option>
                                                 {{-- @{{  }} = pake @ untuk membedakan variable vue dan blade --}}
                                                 <option v-for="province in provinces" :value="province.id">@{{ province.name }}</option>  
                                             </select>
                 
                                             {{-- JIka tidak ada data --}}
                                             <select v-else class="form-control">
-                                                <option value="" disabled>-- Select Province --</option>
+                                                <option value="" disabled>-- Pilih Provinsi --</option>
                                             </select>
                                         </div>
                                     </div>
                                     <div class="col-md-4">
                                         <div class="form-group">
-                                            <label for="regencies_id">City</label>
+                                            <label for="regencies_id">Kota</label>
                                             {{-- jika data ada --}}
                                             <select name="regencies_id" id="regencies_id" class="form-control" v-if="regencies" v-model="regencies_id">
-                                                <option value="" disabled>-- Select City --</option>
+                                                <option value="" disabled>-- Pilih Kota --</option>
                                                 <option v-for="regency in regencies" :value="regency.id">@{{ regency.name }}</option> 
                                             </select>
                 
                                             {{-- JIka tidak ada data --}}
                                             <select v-else class="form-control">
-                                                <option value="" disabled>-- Select City --</option>
+                                                <option value="" disabled>-- Pilih Kota --</option>
                                             </select>
                                         </div>
                                     </div>
@@ -114,7 +119,7 @@
                                     <div class="col-md-4">
                                         <div class="form-group">
                                             <label for="zip_code"
-                                                >Postal Code</label
+                                                >Kode Pos</label
                                             >
                                             <input
                                                 type="number"
@@ -127,7 +132,7 @@
                                     </div>
                                     <div class="col-md-6">
                                         <div class="form-group">
-                                            <label for="country">Country</label>
+                                            <label for="country">Negara</label>
                                             <input
                                                 type="text"
                                                 class="form-control"
@@ -139,7 +144,7 @@
                                     </div>
                                     <div class="col-md-6">
                                         <div class="form-group">
-                                            <label for="phone_number">Mobile</label>
+                                            <label for="phone_number">Telepon</label>
                                             <input
                                                 type="tel"
                                                 class="form-control"
@@ -156,7 +161,7 @@
                                             type="submit"
                                             class="btn btn-success px-5"
                                         >
-                                            Save Now
+                                            Simpan Perubahan
                                         </button>
                                     </div>
                                 </div>

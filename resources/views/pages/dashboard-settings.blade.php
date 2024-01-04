@@ -1,7 +1,7 @@
 @extends('layouts.dashboard') 
 
 @section('title') 
-    Store Settings 
+    Pengaturan Toko
 @endsection
 
 
@@ -9,8 +9,8 @@
 <section class="section-content section-dashboard-home" data-aos="fade-up">
     <div class="container-fluid">
         <div class="dashboard-heading">
-            <h2 class="dashboard-title">Store Settings</h2>
-            <p class="dashboard-subtitle">Make store that profitable</p>
+            <h2 class="dashboard-title">Pengaturan Toko</h2>
+            <p class="dashboard-subtitle">Jadikan tokomu lebih menguntungkan</p>
         </div>
         <!-- Dashboard content -->
         <div class="dashboard-content">
@@ -40,14 +40,14 @@
                                     <div class="col-md-6">
                                         <div class="form-group">
                                             <label for="category"
-                                                >Kategori</label
+                                                >Kategori Toko</label
                                             >
                                             <select
                                                 name="category"
                                                 id="category"
                                                 class="form-control"
                                             >
-                                                <option value="" disabled >-- Select Categories --</option>
+                                                <option value="" disabled >-- Pilih Kategori --</option>
                                                 <option value="{{ $user->categories_id }}" selected class="font-italic">Tidak diganti</option>
                                                 @foreach ($categories as $category)
                                                     <option value="{{ $category->id }}">{{ $category->name }}</option>
@@ -57,7 +57,7 @@
                                     </div>
                                     <div class="col-md-6">
                                         <div class="form-group">
-                                            <label>Store Status</label>
+                                            <label>Status Toko</label>
                                             <p class="text-muted">
                                                 Apakah saat ini toko Anda buka?
                                             </p>
@@ -104,7 +104,7 @@
                                             type="submit"
                                             class="btn btn-success px-5"
                                         >
-                                            Save Now
+                                            Simpan Perubahan
                                         </button>
                                     </div>
                                 </div>

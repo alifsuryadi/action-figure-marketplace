@@ -1,7 +1,7 @@
 @extends('layouts.app') 
 
 @section('title') 
-    Store Detail Page 
+    Halaman Detail Produk
 @endsection
 
 
@@ -31,13 +31,13 @@
     <section class="store-gallery mb-3" id="gallery">
         <div class="container">
             <div class="row">
-                <div class="col-lg-8" data-aos="zoom-in">
+                <div class="col-lg-8 images-thumbnail" data-aos="zoom-in">
                     <transition name="slide-fade" mode="out-in">
                         <!-- :src = variable di vue -->
                         <img
                             :src="photos[activePhoto].url"
                             :key="photos[activePhoto].id"
-                            class="w-100 main-image"
+                            class="main-image"
                             alt=""
                         />
                     </transition>
@@ -55,6 +55,7 @@
                                 <img
                                     :src="photo.url"
                                     class="w-100 thumbnail-image"
+                                    style="max-height: 200px"
                                     :class="{active : index == activePhoto}"
                                     alt=""
                                 />
