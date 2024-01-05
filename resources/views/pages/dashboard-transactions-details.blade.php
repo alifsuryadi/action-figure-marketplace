@@ -200,6 +200,9 @@
 
                                 <div class="row mt-4">
                                     <div class="col-12 text-right">
+                                        <a href="{{ route('dashboard-transaction-print', $transaction->id) }}" class="btn btn-secondary mt-4 btn-lg mr-4" target="_blank">
+                                            Cetak
+                                        </a>
                                         <button
                                             type="submit"
                                             class="btn btn-lg btn-success mt-4"

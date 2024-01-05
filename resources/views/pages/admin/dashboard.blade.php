@@ -51,7 +51,7 @@
             <div class="row mt-3">
                 <div class="col-12 mt-2">
                     <div class="card">
-                        <div class="card-header">Grafik Penjualan Harian </div>
+                        <div class="card-header">Grafik Transaksi Harian </div>
                         <div class="card-body">
                             <div id="grafik"></div>
                         </div>
@@ -72,14 +72,14 @@
 
         Highcharts.chart('grafik', {
             title : {
-                text : 'Grafik Pendapatan Harian'
+                text : 'Grafik Transaksi Harian'
             },
             xAxis : {
                 categories : tanggal
             },
             yAxis : {
                 title : {
-                    text : 'Nominal Pendapatan Harian'
+                    text : 'Nominal Transaksi Harian'
                 }
             },
             plotOptions : {
@@ -89,7 +89,7 @@
             },
             series : [
                 {
-                    name : 'Nominal Pendapatan',
+                    name : 'Nominal Transaksi',
                     data : pendapatan
 
                 }

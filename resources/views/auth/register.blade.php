@@ -79,7 +79,7 @@
                                 @enderror
                             </div>
                             <div class="form-group">
-                                <label>Store</label>
+                                <label>Tokomu</label>
                                 <p class="text-muted">Apakah anda juga ingin membuka toko?</p>
                                 <div
                                     class="custom-control custom-radio custom-control-inline"

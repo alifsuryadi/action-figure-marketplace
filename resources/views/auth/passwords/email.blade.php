@@ -5,9 +5,9 @@
 @endsection
 
 @section('content')
-<div class="page-content page-auth">
+<div class="page-content page-auth" style="min-height: 60dvh">
     <section class="section-store-auth">
-        <div class="container">
+        <div class="container ">
             <div class="row justify-content-center ">
                 <div class="col-md-8 mt-5">
                     <div class="card">

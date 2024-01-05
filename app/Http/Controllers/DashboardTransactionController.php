@@ -53,5 +53,15 @@ class DashboardTransactionController extends Controller
 
         return redirect()->route('dashboard-transaction-details', $id);
     }
+
+    public function print(Request $request, string $id){
+
+        $transaction = TransactionDetail::with(['transaction.user', 'product.galleries'])
+                                ->findOrFail($id);
+
+        return view('pages.dashboard-transactions-details-print',[
+            'transaction' => $transaction
+        ]);
+    }
     
 }
