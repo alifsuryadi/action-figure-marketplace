@@ -1,22 +1,20 @@
 # Action Figure Marketplace
 
 Action Figure Marketplace is a project designed for buying and selling various action figures. Follow the steps above to set up the project locally and start exploring the fascinating world of action figures. Feel free to contribute and enhance the marketplace.
----
-Feel free to adjust the language and details according to the specifics of your project.
 
 ---
 ## Preview
 ### Home Page
-![Beranda](https://github.com/alifsuryadi/action-figure-marketplace/assets/119511703/0531071e-fddf-4b99-adf8-1116edf99311)
+![Beranda](https://github.com/alifsuryadi/action-figure-marketplace/assets/119511703/591a5f00-77f5-4c32-9fd8-76cbb153f051)
 
 ### Category Page
-![Store-Category-Page](https://github.com/alifsuryadi/action-figure-marketplace/assets/119511703/7a005a02-e7b1-416a-9396-abda140b7943)
+![Store-Category-Page](https://github.com/alifsuryadi/action-figure-marketplace/assets/119511703/ada5a0c0-f3c2-4931-bf4b-cd95f9cf5396)
 
 ### Admin Dashboard
-![Dashboard-Admin](https://github.com/alifsuryadi/action-figure-marketplace/assets/119511703/98d2e9bd-945c-4991-9aa6-cff08fb49b3e)
+![Dashboard-Admin](https://github.com/alifsuryadi/action-figure-marketplace/assets/119511703/50b246ea-5e17-408b-8930-b0f1a7e61f0e)
 
 ### User Dashboard
-![Dashboard-Toko](https://github.com/alifsuryadi/action-figure-marketplace/assets/119511703/0cce4d2f-b1c8-45f2-a58b-bc438e2e978f)
+![Dashboard-Toko](https://github.com/alifsuryadi/action-figure-marketplace/assets/119511703/1c27245a-c76a-4a62-9feb-c7b8cb883c69)
 
 ### And More
 You can try it yourself
@@ -92,5 +90,8 @@ This project is licensed under the [MIT License](LICENSE)
 ---
 ## Repo :
 Source code : [action-figure-marketplace](https://github.com/alifsuryadi/action-figure-marketplace)
+
+---
+Feel free to adjust the language and details according to the specifics of your project.
 
 ### Thanks
