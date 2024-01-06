@@ -8,7 +8,7 @@ Action Figure Marketplace is a project designed for buying and selling various a
 ![Beranda](https://github.com/alifsuryadi/action-figure-marketplace/assets/119511703/591a5f00-77f5-4c32-9fd8-76cbb153f051)
 
 ### Category Page
-![Store-Category-Page](https://github.com/alifsuryadi/action-figure-marketplace/assets/119511703/88046530-319c-4746-b73f-d08f672a55ad)
+![Store-Category-Page](https://github.com/alifsuryadi/action-figure-marketplace/assets/119511703/aaa5d1d1-334c-46d3-a0fe-c3a014e0458b)
 
 ### Admin Dashboard
 ![Dashboard-Admin](https://github.com/alifsuryadi/action-figure-marketplace/assets/119511703/50b246ea-5e17-408b-8930-b0f1a7e61f0e)
