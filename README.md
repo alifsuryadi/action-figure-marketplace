@@ -86,13 +86,13 @@ Start the server
 
 ---
 
-## License :
+## License
 
 This project is licensed under the [MIT License](LICENSE)
 
 ---
 
-## Repo :
+## Repo
 
 Source code : [action-figure-marketplace](https://github.com/alifsuryadi/action-figure-marketplace)
 
