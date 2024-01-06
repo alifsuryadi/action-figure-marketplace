@@ -3,36 +3,37 @@
 Action Figure Marketplace is a project designed for buying and selling various action figures. Follow the steps above to set up the project locally and start exploring the fascinating world of action figures. Feel free to contribute and enhance the marketplace.
 
 ---
-## Preview
-### Home Page
-![Beranda](https://github.com/alifsuryadi/action-figure-marketplace/assets/119511703/591a5f00-77f5-4c32-9fd8-76cbb153f051)
 
-### Category Page
-![Store-Category-Page](https://github.com/alifsuryadi/action-figure-marketplace/assets/119511703/aaa5d1d1-334c-46d3-a0fe-c3a014e0458b)
+#### Interactive Demo
 
-### Admin Dashboard
-![Dashboard-Admin](https://github.com/alifsuryadi/action-figure-marketplace/assets/119511703/50b246ea-5e17-408b-8930-b0f1a7e61f0e)
+Checkout the <a target="_blank" href="http://actionfigure.rf.gd"> Interactive Demo </a> here.
 
-### User Dashboard
-![Dashboard-Toko](https://github.com/alifsuryadi/action-figure-marketplace/assets/119511703/1c27245a-c76a-4a62-9feb-c7b8cb883c69)
+<p align="center">
+    <img src="  ">
+</p>
 
-### And More
-You can try it yourself
+#### Menu
 
+-   [Contribution](#Contribution)
+-   [Run Locally](#Run-Locally)
+-   [License](#License)
+-   [Repo](#Repo)
+-   [Thanks](#Thanks)
 
 ---
+
 ## Contribution
 
 You are welcome to contribute to this project. Please follow the contribution guidelines in [CONTRIBUTING.md](CONTRIBUTING.md).
 
-
 ## Run Locally
-- Here are the steps to install and run the project.
+
+-   Here are the steps to install and run the project.
 
 Clone the project
 
 ```bash
-  git clone https://github.com/alifsuryadi/action-figure-marketplace
+  git clone https://github.com/alifsuryadi/action-figure-marketplace.git
 ```
 
 Go to the project directory
@@ -84,14 +85,21 @@ Start the server
 ```
 
 ---
+
 ## License :
+
 This project is licensed under the [MIT License](LICENSE)
 
 ---
+
 ## Repo :
+
 Source code : [action-figure-marketplace](https://github.com/alifsuryadi/action-figure-marketplace)
 
 ---
+
 Feel free to adjust the language and details according to the specifics of your project.
 
 ### Thanks
+
+Enjoy Marketplace !!
