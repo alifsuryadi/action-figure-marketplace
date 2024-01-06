@@ -1,27 +1,96 @@
-# E-COMMERCE / MARKETPLACE
+# Action Figure Marketplace
 
-Masih tahap pengembangan
+Action Figure Marketplace is a project designed for buying and selling various action figures. Follow the steps above to set up the project locally and start exploring the fascinating world of action figures. Feel free to contribute and enhance the marketplace.
+---
+Feel free to adjust the language and details according to the specifics of your project.
 
-## Lisensi
+---
+## Preview
+### Home Page
+![Beranda](https://github.com/alifsuryadi/action-figure-marketplace/assets/119511703/0531071e-fddf-4b99-adf8-1116edf99311)
 
-MIT License
+### Category Page
+![Store-Category-Page](https://github.com/alifsuryadi/action-figure-marketplace/assets/119511703/7a005a02-e7b1-416a-9396-abda140b7943)
 
-Copyright (c) 2024 Alif Suryadi
+### Admin Dashboard
+![Dashboard-Admin](https://github.com/alifsuryadi/action-figure-marketplace/assets/119511703/98d2e9bd-945c-4991-9aa6-cff08fb49b3e)
 
-Permission is hereby granted, free of charge, to any person obtaining a copy
-of this software and associated documentation files (the "Software"), to deal
-in the Software without restriction, including without limitation the rights
-to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-copies of the Software, and to permit persons to whom the Software is
-furnished to do so, subject to the following conditions:
+### User Dashboard
+![Dashboard-Toko](https://github.com/alifsuryadi/action-figure-marketplace/assets/119511703/0cce4d2f-b1c8-45f2-a58b-bc438e2e978f)
 
-The above copyright notice and this permission notice shall be included in all
-copies or substantial portions of the Software.
+### And More
+You can try it yourself
 
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
-SOFTWARE.
+
+---
+## Contribution
+
+You are welcome to contribute to this project. Please follow the contribution guidelines in [CONTRIBUTING.md](CONTRIBUTING.md).
+
+
+## Run Locally
+- Here are the steps to install and run the project.
+
+Clone the project
+
+```bash
+  git clone https://github.com/alifsuryadi/action-figure-marketplace
+```
+
+Go to the project directory
+
+```bash
+  cd action-figure-marketplace
+```
+
+Create an .env file based on the env.example file
+
+```bash
+  copy .env.example .env
+```
+
+Install package-package
+
+```bash
+  composer install
+```
+
+Generate key to enter APP_KEY in .env file
+
+```bash
+  php artisan key:generate
+```
+
+Create database
+
+```bash
+  php artisan migrate
+```
+
+Access the seeder files in the database/seeds folder
+
+```bash
+  php artisan db:seed
+```
+
+Run bootstrap (optional)
+
+```bash
+  npm run dev
+```
+
+Start the server
+
+```bash
+  php artisan serve
+```
+
+---
+## License :
+This project is licensed under the [MIT License](LICENSE)
+
+---
+## Repo :
+Source code : [action-figure-marketplace](https://github.com/alifsuryadi/action-figure-marketplace)
+
+### Thanks
