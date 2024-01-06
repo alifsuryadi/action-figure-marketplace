@@ -9,7 +9,7 @@ Action Figure Marketplace is a project designed for buying and selling various a
 Checkout the <a target="_blank" href="http://actionfigure.rf.gd"> Interactive Demo </a> here.
 
 <p align="center">
-    <img src="  ">
+    <img src="![preview](https://github.com/alifsuryadi/action-figure-marketplace/assets/119511703/7ab9ed16-0c2e-4a46-a37a-bdd4c5e5d206)">
 </p>
 
 #### Menu
