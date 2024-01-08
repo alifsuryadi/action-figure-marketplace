@@ -72,6 +72,18 @@ Access the seeder files in the database/seeds folder
   php artisan db:seed
 ```
 
+import all data from provinces to sub-districts in Indonesia (optional)
+
+```bash
+  php artisan db:seed --class=IndoRegionSeeder
+```
+
+Install vite (optional)
+
+```bash
+  npm install
+```
+
 Run bootstrap (optional)
 
 ```bash
