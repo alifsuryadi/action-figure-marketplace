@@ -72,6 +72,24 @@ Access the seeder files in the database/seeds folder
   php artisan db:seed
 ```
 
+Import all data from provinces to sub-districts in Indonesia (optional)
+
+```bash
+  php artisan db:seed --class=IndoRegionSeeder
+```
+
+Create a symbolic link between the storage folder and the public folder on the web server
+
+```bash
+  php artisan storage:link
+```
+
+Install vite
+
+```bash
+  npm install
+```
+
 Run bootstrap (optional)
 
 ```bash
