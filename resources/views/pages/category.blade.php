@@ -52,9 +52,17 @@
     <!-- Products -->
     <section class="store-new-products">
         <div class="container">
-            <div class="row">
-                <div class="col-12" data-aos="fade-up">
+            <div class="row mb-5">
+                <div class="col-12 col-lg-8" data-aos="fade-up">
                     <h5>Semua Produk</h5>
+                </div>
+                <div class="col-10 col-lg-4" data-aos="fade-up">
+                    <form action="{{ route('categories-search') }}" class="d-flex" role="search" method="POST">
+                        @csrf
+                        <input type="text" name="query" class="form-control me-2" placeholder="Cari" aria-label="Search">
+                        <button type="submit" class="btn btn-outline-success">Cari</button>
+                    </form>
+                    
                 </div>
             </div>
             <div class="row">

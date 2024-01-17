@@ -39,4 +39,19 @@ class CategoryController extends Controller
             'products' => $products,
         ]);
     }
+
+    public function search(Request $request)
+{
+    $query = $request->input('query'); // Assuming you have a field named 'query' in your form
+
+    $categories = Category::all();
+    $products = Product::with(['galleries'])
+        ->where('name', 'like', '%' . $query . '%')
+        ->paginate(12);
+
+    return view('pages.category', [
+        'categories' => $categories,
+        'products' => $products,
+    ]);
+}
 }

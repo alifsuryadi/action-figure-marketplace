@@ -41,6 +41,12 @@
         >Akun Saya</a
       >
     </div>
+    <div class="list-group list-group-flush">
+      <a href="whatsapp://send?text=Hallo%20min,%20saya%20ingin%20bertanya&phone=+6285156731505" class="list-group-item list-group-item-action">
+        Hubungi CS
+    </a>
+    
+    </div>
     <hr>
     <div class="list-group list-group-flush">
       <a href="{{ route('logout') }}" onclick="event.preventDefault();
