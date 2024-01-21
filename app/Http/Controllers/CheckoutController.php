@@ -67,10 +67,17 @@ class CheckoutController extends Controller
         Config::$isSanitized = config('services.midtrans.isSanitized');
         Config::$is3ds = config('services.midtrans.is3ds');
 
+
+        // cek transaksi ada atau tidak
+        $totalPrice = (float) $request->total_price;
+        if ($totalPrice <= 0.01) {
+            return view("pages.failed");
+        }
+
         $midtrans = [
             'transaction_details' => [
                 'order_id' => $code,
-                'gross_amount' => (int) $request->total_price,
+                'gross_amount' => (int) $totalPrice,
             ],
             'costumer_details' => [
                 'first_name' => Auth::user()->name,
