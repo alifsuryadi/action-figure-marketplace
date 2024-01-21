@@ -25,6 +25,13 @@ class CheckoutController extends Controller
         $user = Auth::user();
         $user->update($request->except('total_price'));
 
+
+        // cek transaksi ada atau tidak
+        $totalPrice = (float) $request->total_price;
+        if ($totalPrice <= 0.01) {
+            return view("pages.failed");
+        }
+
         $code = 'STORE-' . mt_rand(000000, 999999);
         $carts = Cart::with(['product', 'user'])
                     ->where('users_id', Auth::user()->id)
@@ -67,12 +74,6 @@ class CheckoutController extends Controller
         Config::$isSanitized = config('services.midtrans.isSanitized');
         Config::$is3ds = config('services.midtrans.is3ds');
 
-
-        // cek transaksi ada atau tidak
-        $totalPrice = (float) $request->total_price;
-        if ($totalPrice <= 0.01) {
-            return view("pages.failed");
-        }
 
         $midtrans = [
             'transaction_details' => [

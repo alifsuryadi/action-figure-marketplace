@@ -120,6 +120,15 @@
                 <li class="nav-item">
                     <a href="{{ route('dashboard-settings-account') }}" class="nav-link">Hi, {{ Auth::user()->name }}</a>
                 </li>
+
+                <li class="nav-item">
+                    @if ($user_roles == 'USER')
+                        <a href="{{ route('dashboard') }}" class="nav-link d-inline-block">Dashboard</a>    
+                    @else
+                        <a href="{{ url('/admin') }}" class="nav-link d-inline-block">Administrator</a>
+                    @endif
+                </li>
+                
                 <li class="nav-item">
                     <a href="{{ route('cart') }}" class="nav-link d-inline-block">Keranjang</a>
                 </li>

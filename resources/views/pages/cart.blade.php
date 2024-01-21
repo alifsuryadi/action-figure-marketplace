@@ -254,6 +254,7 @@
                         <button
                             type="submit"
                             class="btn btn-success mt-4 px-4 btn-block"
+                            {{-- @if ((float)$totalPrice <= 0.01) disabled @endif --}}
                             >
                             Beli Sekarang
                         </button>
