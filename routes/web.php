@@ -11,6 +11,7 @@ use App\Http\Controllers\DashboardSettingController;
 use App\Http\Controllers\DashboardTransactionController;
 use App\Http\Controllers\DetailController;
 use App\Http\Controllers\HomeController;
+use App\Http\Controllers\PromoController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -36,6 +37,7 @@ Route::post('/categories/search', [CategoryController::class, 'search'])->name('
 Route::get('/details/{id}', [DetailController::class, 'index'])->name('detail');
 Route::post('/details/{id}', [DetailController::class, 'add'])->name('detail-add');
 
+Route::get('/promo', [PromoController::class, 'index'])->name('promo');
 
 // Bakalan di akses midtrans, jangan kasih middleware
 Route::post('/checkout/callback', [CheckoutController::class, 'callback'])->name('midtrans-callback');

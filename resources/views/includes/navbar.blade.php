@@ -25,7 +25,7 @@
                     <a href="{{ route('categories') }}" class="nav-link">Kategori</a>
                 </li>
                 <li class="nav-item  {{ (request()->is('/promo*')) ? 'active' : '' }}" >
-                    <a href="#" class="nav-link">Promo</a>
+                    <a href="{{ route('promo') }}" class="nav-link">Promo</a>
                 </li>
 
                 {{-- Jika belum login --}}
