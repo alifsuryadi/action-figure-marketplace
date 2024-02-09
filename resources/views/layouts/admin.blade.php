@@ -4,7 +4,7 @@
         <meta charset="utf-8" />
         <meta name="title" content="Action Figure Marketplace">
         <meta name="keywords" content="anime, action figure, marvel">
-        <meta name="robots" content="noindex">
+        <meta name="robots" content="index, follow">
         <meta name="language" content="Indonesia">
 
         <meta
